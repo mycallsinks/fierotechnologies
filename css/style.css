@@ -55,7 +55,8 @@ body {
 .fiero_projects,
 .project_into,
 .footer_holder,
-.questions {
+.questions ,
+.service-details{
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 5px;
@@ -414,12 +415,6 @@ a {
   width: 100%;
 }
 
-/* .about_us .list_group li{
-  background: transparent !important;
-  border: none;
-  color: var(--primary-text-color);
-  padding: 5px 0;
-} */
 
 .about_us .list_group li {
   background: transparent !important;
@@ -429,7 +424,7 @@ a {
   list-style-type: none; /* Remove default bullets */
 }
 
-.about_us .list_group .fa-shield-halved {
+.about_us .list_group i {
   color: var(--orther-text-color);
   font-size: 1rem;
   display: inline-block;
@@ -955,19 +950,6 @@ h1 {
   width: 100%;
 }
 
-/* 
-.btn, .nav_btn {
-
-  background: linear-gradient(130deg, #00abde, #ff7900);
-  background-size: 100% 100%;
-  transition: all 1s ease;
-  overflow: hidden;
-}
-
-.btn:hover, .nav_btn:hover {
-  background-position: 100% 0 !important;
-  border: 1px solid #ff7900  !important;
-} */
 
 .company_servies .card:hover {
   border: 1px solid var(--orther-text-color) !important;

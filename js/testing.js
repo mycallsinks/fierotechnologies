@@ -1,12 +1,3 @@
-window.addEventListener("load", function() {
-    const loader = document.getElementById("loader");
-    loader.style.display = "none";
-});
-
-
-// for projects
-
-
 document.querySelectorAll('.list-group-item').forEach(item => {
     item.addEventListener('click', function () {
         const category = this.getAttribute('data-category');
@@ -49,6 +40,4 @@ document.querySelectorAll('.list-group-item').forEach(item => {
             item.classList.add('selected');
         });
     });
-
-
 
