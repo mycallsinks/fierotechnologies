@@ -1,0 +1,98 @@
+:root {
+    /* Background Colors */
+  
+    --primary-bg-color: #021735;
+    /* --primary-bg-color: #0b2c57; */
+    --secondary-bg-color: #d7dfef;
+    /* Text Colors */
+  
+    --primary-text-color: #ffff;
+    --primary-two-color: #021735;
+    --paragraph-text-color: #ffffff80;
+    --secondary-text-color: #d7dfef;
+    --orther-text-color: #ff7900;
+    --linear: linear-gradient(130deg, #ff7900, #00abde);
+  
+    /* Button Colors */
+  
+    /* fonts */
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+      "Segoe UI Emoji", "Segoe UI Symbol";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+      "Liberation Mono", "Courier New", monospace;
+  }
+
+.service-categories {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.service-details {
+    display: none;
+    margin-top: 20px;
+    animation: fadeIn 0.5s ease-in-out;
+    width: 100%;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* styles for the card */
+
+.service-details h2 {
+    color: var(--orther-text-color);
+}
+
+.service-details p{
+    color: var(--primary-text-color);
+}
+.service-details label{
+    color: var(--primary-text-color);
+    text-align: left;
+    width: 100%;
+    margin-bottom: 5px;
+    margin-top: 15px;
+}
+
+.list-group-horizontal {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-group-horizontal li{
+    border-radius: 7px ;
+    /* background: var(--linear); */
+    background: #80451195;
+    background: #1885a7;
+    color: var(--primary-text-color);
+    border: 1px solid var(--orther-text-color);
+}
+
+
+/* Default styles for list items */
+.list-group-item {
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+/* Styles for selected item */
+.list-group-item.selected {
+    border: 1px solid #ff7900; /* Border color */
+    background: linear-gradient(45deg, #ff7900, #00abde); /* Linear gradient background */
+    color: white; /* Text color for better contrast */
+}
+
+
