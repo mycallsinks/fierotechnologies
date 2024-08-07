@@ -47,6 +47,7 @@
 body {
   background-color: var(--primary-bg-color);
   font-family: "Poppins", sans-serif;
+  font-family: sans-serif;
 }
 
 .nav_holder,
