@@ -1118,6 +1118,17 @@ h1,
   }
 }
 
+.navbar-toggler-icon {
+  display: inline-block;
+  color: var(--primary-text-color) !important;
+}
+
+.navbar-toggler .fa-bars{
+  display: inline-block;
+  color: var(--primary-text-color) !important;
+  padding: 6px;
+}
+
 
 /* 
 .nav_holder,
