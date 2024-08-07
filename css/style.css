@@ -341,7 +341,6 @@ font-size: 1.9rem !important;
 .our_company_policy .community_text {
   font-weight: 600;
   font-size: 1rem;
-  font-family: "Michroma", sans-serif;
   color: var(--orther-text-color);
 }
 
@@ -1010,3 +1009,29 @@ h1 {
   width: 100%;
   min-width: 565px !important;
 } */
+
+
+.our_company_policy .community_text {
+  font-weight: 600;
+  font-size: 1rem;
+  font-family: "Michroma", sans-serif;
+  color: var(--orther-text-color);
+}
+
+
+h1 {
+  font-size: 2.5rem !important;
+  font-size: 3rem !important;
+  font-weight: 600;
+  font-style: normal;
+  color: var(--primary-text-color);
+  /* font-family: 'Montserrat', sans-serif; */
+
+
+}
+
+
+
+.sub_tittle, h1, .community_text, .card-body h5 {
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif !important;
+}
