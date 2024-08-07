@@ -58,14 +58,27 @@ body {
   background: radial-gradient(circle, #021735 10%, #092a5b 50%, #0c326f 100%);
 }
 
+
 .home_content_holder  .home_title,  .home_content_holder  .home_para,  .home_content_holder  .action_btns, .home_image{
   color: var(--primary-text-color) !important;
   z-index: 100;
 }
 
+.about_content_holder  h1,.about_content_holder .service_tittles,  .about_content_holder  p{
+  color: var(--primary-text-color) !important;
+  z-index: 100;
+}
+
+.about_content_holder .service_tittles{
+  position: relative;
+}
+
+
 .home_content_holder  .home_para{
   color: var(--paragraph-text-color) !important;
 }
+
+
 .home_section{
   background: url(../images/homeimage/homeimages.jpg);
   background-repeat: no-repeat;
@@ -84,7 +97,7 @@ body {
   left: 0;
   height: 100%;
   background: rgba(0, 0, 0, 1);
-  opacity: .8;
+  opacity: .9;
   z-index: 1;
   }
 
@@ -122,11 +135,6 @@ body {
 }
 
 .awesome_design_three {
-  width: 40%;
-  height: 100px;
-
-  /* background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><defs><linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:%2300abde;stop-opacity:1" /><stop offset="100%" style="stop-color:%2300abde;stop-opacity:1" /></linearGradient></defs><path fill="url(%23grad1)" d="M0,256L30,245.3C60,235,120,213,180,208C240,203,300,213,360,213.3C420,213,480,203,540,197.3C600,192,660,192,720,213.3C780,235,840,277,900,282.7C960,288,1020,256,1080,213.3C1140,171,1200,117,1260,112C1320,107,1380,149,1410,170.7L1440,192L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path></svg>'); */
-
   background-size: cover;
   overflow: hidden;
   height: 50px;
@@ -138,10 +146,6 @@ body {
 }
 
 .awesome_design_two {
-  width: 0%;
-  height: 140px;
-
-  /* background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><defs><linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:%2300abde;stop-opacity:1" /><stop offset="100%" style="stop-color:%2300abde;stop-opacity:1" /></linearGradient></defs><path fill="url(%23grad1)" d="M0,256L30,245.3C60,235,120,213,180,208C240,203,300,213,360,213.3C420,213,480,203,540,197.3C600,192,660,192,720,213.3C780,235,840,277,900,282.7C960,288,1020,256,1080,213.3C1140,171,1200,117,1260,112C1320,107,1380,149,1410,170.7L1440,192L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path></svg>'); */
 
   background-size: cover;
   overflow: hidden;
@@ -154,11 +158,6 @@ body {
 }
 
 .awesome_design {
-  width: 90%;
-  height: 200px;
-
-  /* background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><defs><linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:%2300abde;stop-opacity:1" /><stop offset="100%" style="stop-color:%2300abde;stop-opacity:1" /></linearGradient></defs><path fill="url(%23grad1)" d="M0,256L30,245.3C60,235,120,213,180,208C240,203,300,213,360,213.3C420,213,480,203,540,197.3C600,192,660,192,720,213.3C780,235,840,277,900,282.7C960,288,1020,256,1080,213.3C1140,171,1200,117,1260,112C1320,107,1380,149,1410,170.7L1440,192L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path></svg>'); */
-
   background-size: cover;
   overflow: hidden;
   height: 50px;
@@ -170,10 +169,6 @@ body {
 }
 
 .awesome_design_footer {
-  width: 20%;
-  height: 45px;
-
-  /* background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><defs><linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:%2300abde;stop-opacity:1" /><stop offset="100%" style="stop-color:%2300abde;stop-opacity:1" /></linearGradient></defs><path fill="url(%23grad1)" d="M0,256L30,245.3C60,235,120,213,180,208C240,203,300,213,360,213.3C420,213,480,203,540,197.3C600,192,660,192,720,213.3C780,235,840,277,900,282.7C960,288,1020,256,1080,213.3C1140,171,1200,117,1260,112C1320,107,1380,149,1410,170.7L1440,192L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path></svg>'); */
 
   background-size: cover;
   overflow: hidden;
@@ -1081,6 +1076,7 @@ h1,
   border-radius: 40px;
   background: var(--light-orange) !important;
   background: var(--dark-orange) !important;
+
 }
 
 .action_btns button,
@@ -1090,14 +1086,22 @@ button a {
 
 .navbar-toggler {
   background: var(--dark-blue) !important;
+  border: 1px solid var(--dark-blue) ;
+
 }
 .nav_btn {
   background: var(--dark-orange) !important;
+  border: 1px solid var(--dark-orange);
+
 }
+
 
 .act_btn_second {
   background: var(--dark-blue) !important;
+  border: 1px solid var(--dark-blue);
 }
+
+
 
 body,
 p,
@@ -1130,6 +1134,11 @@ h1,
 .btn a {
   padding: 5px 0 !important;
 }
+
+/* hovers */
+
+
+
 
 @media screen and (max-width: 767px) {
   .action_btns,

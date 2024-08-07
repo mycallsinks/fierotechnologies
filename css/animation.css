@@ -38,7 +38,7 @@ nav {
 .act_btn:hover,
 .nav_btn:hover {
   background-position: 100% 0 !important;
-  border: 1px solid var(--orther-text-color) !important;
+  
 }
 
 .navbar-nav .active_link {
