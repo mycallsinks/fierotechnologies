@@ -29,11 +29,12 @@ body {
     --sub-font: 1.2rem;
     --sub-sub-font: 0.9rem;
     --logo-font: 1rem;
-    --primary-color: #ffd615;
-    --primary-color: #ff7900;
+    --orther-text-color:#ff7900;
     --black: rgb(0, 0, 0);
 
     --primary-text-color: #ffff;
+    --linear: linear-gradient(130deg, #ff7900, #00abde);
+
 
 }
 
@@ -118,7 +119,7 @@ h5 {
 
 .contact_wrapper .fa-solid,
 .contact_wrapper .fa-regular {
-    color: var(--primary-color);
+    color: var(--orther-text-color);
     display: inline-block;
     font-size: 1.3rem !important;
     align-self: center;
@@ -176,7 +177,7 @@ h5 {
     align-items: center;
     width: fit-content;
     font-weight: 550;
-    background: linear-gradient(130deg, #ff7900, #00abde);;
+    background: var(--linear);
     padding: 10px 15px;
     height: 40px;
     align-self: center;
@@ -190,7 +191,7 @@ h5 {
 
 input:focus,
 textarea:focus {
-    outline: 1px solid var(--primary-color);
+    outline: 1px solid var(--orther-text-color);
 }
 
 .tittle h1 p {

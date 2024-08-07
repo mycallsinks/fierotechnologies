@@ -13,11 +13,15 @@ nav {
   } 
 }
 
+:root{
+  --linear: linear-gradient(130deg, #ff7900, #00abde);
+  --orther-text-color: #ff7900;
+}
 /* hovering  */
 
 .act_btn,
 .nav_btn {
-  background: linear-gradient(130deg, #00abde, #ff7900);
+  background: var(--linear);
   background-size: 200% 100%;
   transition: all 1s ease-in-out;
   overflow: hidden;
@@ -34,24 +38,24 @@ nav {
 .act_btn:hover,
 .nav_btn:hover {
   background-position: 100% 0 !important;
-  border: 1px solid #ff7900 !important;
+  border: 1px solid var(--orther-text-color) !important;
 }
 
 .navbar-nav .active_link {
-  border-bottom: 1px solid #ff7900;
+  border-bottom: 1px solid var(--orther-text-color);
   transition: all 0.5s ease-out;
 }
 
 @media screen and (max-width:767px) {
   .navbar-nav .active_link {
-    border-bottom: 1px solid #ff7900;
+    border-bottom: 1px solid var(--orther-text-color);
     width: fit-content;
     transition: all 0.5s ease-out;
   }
 }
 
 .questions .accordion-item button {
-  background: linear-gradient(130deg, #ff7900, #00abde) !important;
+  background: var(--linear) !important;
   background-size: 200% 100%;
   background-position: 0 0 !important;
   transition: background-position 1s ease-in-out !important;
@@ -72,7 +76,7 @@ nav {
   margin-top: 10px;
 }
 .single-team-member:hover {
-  border: 1px solid #ff7900 !important;
+  border: 1px solid var(--orther-text-color) !important;
   transition: all 0.5s ease;
 }
 
@@ -81,7 +85,7 @@ nav {
   transition: all 0.5s ease;
 }
 .single-team-member:hover .team-info .w-text {
-  color: #ff7900 !important;
+  color: var(--orther-text-color) !important;
   transition: all 0.5s ease;
 }
 
@@ -198,7 +202,7 @@ nav {
   z-index: 999;
   width: 100%;
   height: 100%;
-  background: linear-gradient(130deg, #ff7900, #00abde);
+  background: var(--linear);
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -214,8 +218,8 @@ nav {
   width: 50px;
   height: 50px;
   border: 6px solid #00abde;
-  border-top: 6px solid #ff7900;
-  border-bottom: 6px solid #ff7900;
+  border-top: 6px solid var(--orther-text-color);
+  border-bottom: 6px solid var(--orther-text-color);
   border-radius: 50%;
   animation: spin 1s linear infinite;
 }

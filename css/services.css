@@ -12,6 +12,7 @@
     --secondary-text-color: #d7dfef;
     --orther-text-color: #ff7900;
     --linear: linear-gradient(130deg, #ff7900, #00abde);
+
   
     /* Button Colors */
   
@@ -101,18 +102,18 @@
 /* Styles for selected item */
 .list-group-item.selected {
     border: 1px solid #021735; 
-    background: linear-gradient(45deg, #ff7900, #00abde); /* Linear gradient background */
+    background: var(--linear);
     color: white; /* Text color for better contrast */
 }
 
 
 .list-group-item:hover, .list-group-item-for-projects:hover {
-    border: 1px solid #ff7900; 
+    border: 1px solid var(--orther-text-color); 
 }
 
 .list-group-item-for-projects.selected {
     border: 1px solid #021735; 
-    background: linear-gradient(45deg, #ff7900, #00abde); /* Linear gradient background */
+    background: var(--linear);
     color: white; /* Text color for better contrast */
 }
 
