@@ -26,9 +26,7 @@
   --linear: linear-gradient(130deg, #fe5800, #0071c3);
   --orange-buttons: #ff7900;
   --blue-buttons: #00abde;
-  --font-family: "Poppins";
-  /* --font-family: "Poppins", sans-serif; */
-
+  --font-family: "Poppins", sans-serif;
   --light-orange: #ff7900;
   --dark-orange: #fe5800;
   --dark-blue: #0071c3;
@@ -145,7 +143,7 @@ html {
 p {
   color: var(--primary-text-color);
   color: var(--paragraph-text-color);
-  font-size: 1rem !important;
+  font-size: .9rem !important;
 }
 
 .code_style i {
@@ -476,6 +474,7 @@ a {
 }
 .company_servies .col-md-9 {
   padding-left: 15px;
+  align-self: center;
 }
 
 .fiero_projects .container {
@@ -535,7 +534,7 @@ h1 {
 
 @media screen and (max-width: 767px) {
   .company_servies .services_holder .card img {
-    height: 200px;
+    height: 250px;
     margin-bottom: 5px;
   }
 
@@ -966,12 +965,12 @@ h1 {
   transition: all 0.5s ease-in;
 }
 
-.projects_holder .graphicsProjectsSlides {
+/* .projects_holder .graphicsProjectsSlides {
   border: 1px solid red !important;
 }
 .projects_holder .graphicsProjectsSlides .carousel-inner {
   border: 1px solid green !important;
-}
+} */
 
 /* .projects_holder .graphicsProjectsSlides img{
   width: 100%;
@@ -988,7 +987,7 @@ h1.home_title {
   font-size: 3rem !important;
 }
 h1 {
-  font-size: 2rem !important;
+  font-size: 2.2rem !important;
   font-weight: 600;
   font-style: normal;
   color: var(--primary-text-color);
@@ -1051,8 +1050,6 @@ h1,
   font-family: "Poppins", sans-serif !important;
   font-family: var(--font-family) !important;
 }
-
-
 /* font sizes for headers */
 /* font sizes for  */
 
@@ -1103,13 +1100,10 @@ h1,
   color: var(--dark-orange);
 }
 
-.navbar {
-  background: url(../images/headerimages/headerimage.avif);
-  background-position:center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  width: 100%;
+
+
+.navbar, .header_contents { 
+  padding:5px 0px !important;
 }
 
 @media screen and (min-width:767px) {
