@@ -1046,11 +1046,11 @@ p,
 .sub_tittle,
 h1,
 .community_text,
-.card-body h5,
-* {
+.card-body h5{
   font-family: "Poppins", sans-serif !important;
   font-family: var(--font-family) !important;
 }
+
 
 /* font sizes for headers */
 /* font sizes for  */
