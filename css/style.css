@@ -24,9 +24,14 @@
   --orther-text-color: #ff7900;
   --linear: linear-gradient(130deg, #ff7900, #00abde);
   --linear: linear-gradient(130deg, #fe5800, #0071c3);
+  --linear: #0071c3 !important;
+  --linear: #fe5800 !important;
   --orange-buttons: #ff7900;
   --blue-buttons: #00abde;
   --font-family: "Poppins", sans-serif;
+
+  --primary-background:#0071c3;
+  --secondary-bakcground:#fe5800;
   --light-orange: #ff7900;
   --dark-orange: #fe5800;
   --dark-blue: #0071c3;
@@ -52,6 +57,36 @@ body {
 .home_section {
   background: radial-gradient(circle, #021735 10%, #092a5b 50%, #0c326f 100%);
 }
+
+.home_content_holder  .home_title,  .home_content_holder  .home_para,  .home_content_holder  .action_btns, .home_image{
+  color: var(--primary-text-color) !important;
+  z-index: 100;
+}
+
+.home_content_holder  .home_para{
+  color: var(--paragraph-text-color) !important;
+}
+.home_section{
+  background: url(../images/homeimage/homeimages.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 0;
+}
+
+
+.home_section::after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: rgba(0, 0, 0, 1);
+  opacity: .8;
+  z-index: 1;
+  }
 
 .container_holder,
 .header_contents,
@@ -90,44 +125,64 @@ body {
   width: 40%;
   height: 100px;
 
-  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><defs><linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:%23ff7900;stop-opacity:1" /><stop offset="100%" style="stop-color:%2300abde;stop-opacity:1" /></linearGradient></defs><path fill="url(%23grad1)" d="M0,256L30,245.3C60,235,120,213,180,208C240,203,300,213,360,213.3C420,213,480,203,540,197.3C600,192,660,192,720,213.3C780,235,840,277,900,282.7C960,288,1020,256,1080,213.3C1140,171,1200,117,1260,112C1320,107,1380,149,1410,170.7L1440,192L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path></svg>');
+  /* background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><defs><linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:%2300abde;stop-opacity:1" /><stop offset="100%" style="stop-color:%2300abde;stop-opacity:1" /></linearGradient></defs><path fill="url(%23grad1)" d="M0,256L30,245.3C60,235,120,213,180,208C240,203,300,213,360,213.3C420,213,480,203,540,197.3C600,192,660,192,720,213.3C780,235,840,277,900,282.7C960,288,1020,256,1080,213.3C1140,171,1200,117,1260,112C1320,107,1380,149,1410,170.7L1440,192L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path></svg>'); */
 
   background-size: cover;
   overflow: hidden;
-  background-color: var(--linear);
+  height: 50px;
+  width: 50px;
+  border: 1px solid var(--dark-orange);
+  position: relative;
+  left: 40%;
+  transform: rotate(45deg);
 }
 
 .awesome_design_two {
-  width: 90%;
+  width: 0%;
   height: 140px;
 
-  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><defs><linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:%23ff7900;stop-opacity:1" /><stop offset="100%" style="stop-color:%2300abde;stop-opacity:1" /></linearGradient></defs><path fill="url(%23grad1)" d="M0,256L30,245.3C60,235,120,213,180,208C240,203,300,213,360,213.3C420,213,480,203,540,197.3C600,192,660,192,720,213.3C780,235,840,277,900,282.7C960,288,1020,256,1080,213.3C1140,171,1200,117,1260,112C1320,107,1380,149,1410,170.7L1440,192L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path></svg>');
+  /* background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><defs><linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:%2300abde;stop-opacity:1" /><stop offset="100%" style="stop-color:%2300abde;stop-opacity:1" /></linearGradient></defs><path fill="url(%23grad1)" d="M0,256L30,245.3C60,235,120,213,180,208C240,203,300,213,360,213.3C420,213,480,203,540,197.3C600,192,660,192,720,213.3C780,235,840,277,900,282.7C960,288,1020,256,1080,213.3C1140,171,1200,117,1260,112C1320,107,1380,149,1410,170.7L1440,192L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path></svg>'); */
 
   background-size: cover;
   overflow: hidden;
-  background-color: var(--linear);
+  height: 50px;
+  width: 50px;
+  border: 1px solid var(--dark-orange);
+  position: relative;
+  left: 20%;
+  transform: rotate(45deg);
 }
 
 .awesome_design {
   width: 90%;
   height: 200px;
 
-  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><defs><linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:%23ff7900;stop-opacity:1" /><stop offset="100%" style="stop-color:%2300abde;stop-opacity:1" /></linearGradient></defs><path fill="url(%23grad1)" d="M0,256L30,245.3C60,235,120,213,180,208C240,203,300,213,360,213.3C420,213,480,203,540,197.3C600,192,660,192,720,213.3C780,235,840,277,900,282.7C960,288,1020,256,1080,213.3C1140,171,1200,117,1260,112C1320,107,1380,149,1410,170.7L1440,192L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path></svg>');
+  /* background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><defs><linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:%2300abde;stop-opacity:1" /><stop offset="100%" style="stop-color:%2300abde;stop-opacity:1" /></linearGradient></defs><path fill="url(%23grad1)" d="M0,256L30,245.3C60,235,120,213,180,208C240,203,300,213,360,213.3C420,213,480,203,540,197.3C600,192,660,192,720,213.3C780,235,840,277,900,282.7C960,288,1020,256,1080,213.3C1140,171,1200,117,1260,112C1320,107,1380,149,1410,170.7L1440,192L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path></svg>'); */
 
   background-size: cover;
   overflow: hidden;
-  background-color: var(--linear);
+  height: 50px;
+  width: 50px;
+  border: 1px solid var(--dark-orange);
+  position: relative;
+  left: 90%;
+  transform: rotate(45deg);
 }
 
 .awesome_design_footer {
   width: 20%;
   height: 45px;
 
-  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><defs><linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:%23ff7900;stop-opacity:1" /><stop offset="100%" style="stop-color:%2300abde;stop-opacity:1" /></linearGradient></defs><path fill="url(%23grad1)" d="M0,256L30,245.3C60,235,120,213,180,208C240,203,300,213,360,213.3C420,213,480,203,540,197.3C600,192,660,192,720,213.3C780,235,840,277,900,282.7C960,288,1020,256,1080,213.3C1140,171,1200,117,1260,112C1320,107,1380,149,1410,170.7L1440,192L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path></svg>');
+  /* background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><defs><linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:%2300abde;stop-opacity:1" /><stop offset="100%" style="stop-color:%2300abde;stop-opacity:1" /></linearGradient></defs><path fill="url(%23grad1)" d="M0,256L30,245.3C60,235,120,213,180,208C240,203,300,213,360,213.3C420,213,480,203,540,197.3C600,192,660,192,720,213.3C780,235,840,277,900,282.7C960,288,1020,256,1080,213.3C1140,171,1200,117,1260,112C1320,107,1380,149,1410,170.7L1440,192L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path></svg>'); */
 
   background-size: cover;
   overflow: hidden;
-  background-color: var(--linear);
+  height: 50px;
+  width: 50px;
+  border: 1px solid var(--dark-orange);
+  position: relative;
+  left: 70%;
+  transform: rotate(45deg);
 }
 
 html {
@@ -239,12 +294,15 @@ a {
 
 .home_content_holder {
   /* height: 100dvh; */
-  /* height: calc(100dvh - 80px); */
+  height: calc(100dvh 65px) !important;
   display: flex;
   justify-content: center;
   align-items: center;
   padding-top: 70px !important;
+  z-index: 100;
+
 }
+
 
 .home_image {
   position: relative;
@@ -258,6 +316,7 @@ a {
   width: auto;
   transform: scale(1.25) !important;
 } */
+
 
 @media screen and (min-width: 767px) {
   .home_content_holder {
@@ -585,7 +644,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: var(--linear);
+  background: var(--primary-background);
 }
 .facts .titles_holder {
   max-width: 500px;
@@ -836,7 +895,7 @@ h1 {
   margin: 10px 50px;
   height: 170px;
   border-radius: 12px;
-  background: var(--linear);
+  background: var(--secondary-bakcground);
   position: relative;
 }
 .team_members .single-team-member .team-member-thumb .team-social-icon a {
@@ -908,8 +967,7 @@ h1 {
 .footer {
   position: relative;
   width: 100%;
-  background: var(--linear);
-  background: linear-gradient(130deg, #00aadea6, #ff77008c);
+  border-top: 2px solid var(--primary-background);
   overflow: hidden;
   margin-top: 100px;
   padding: 30px 5px;

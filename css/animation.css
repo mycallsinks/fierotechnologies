@@ -56,6 +56,7 @@ nav {
 
 .questions .accordion-item button {
   background: var(--linear) !important;
+  background: var(--primary-background) !important;
   background-size: 200% 100%;
   background-position: 0 0 !important;
   transition: background-position 1s ease-in-out !important;
