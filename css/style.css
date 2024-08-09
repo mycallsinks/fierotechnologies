@@ -1,6 +1,6 @@
 /* fonts */
 
-@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 
 /* reset sheet */
 * {
@@ -23,7 +23,7 @@
   --primary-text-color: #ffff;
   --primary-text-color: #000 !important;
   --primary-text-color: #000000f1 !important;
-  --primary-two-color: #021735;
+  --primary-text-color: rgba(0, 0, 0, 0.8) !important;
   --paragraph-text-color: #ffffff80;
   --paragraph-text-color: #000 !important;
   --paragraph-text-color: rgba(0, 0, 0, 0.8) !important;
@@ -54,7 +54,7 @@
   --light-gray: #f7f7f7;
   --dark-gray: #333333;
   --white-color: #ffffff;
-  --paragraph-color: #000;
+  --paragraph-color: rgba(0, 0, 0, 0.9) !important;
 }
 
 /* default styles */
@@ -71,9 +71,10 @@ body {
 .home_section {
   background: radial-gradient(circle, #021735 10%, #092a5b 50%, #0c326f 100%);
 } */
-/* body {
-  background: linear-gradient(to right, #e0f3ffbc, #ffffff, #e0f3ffab);
-} */
+body {
+  /* background: linear-gradient(to right, #e0f3ffbc, #ffffff, #e0f3ffab); */
+  /* background: #e0f3ff2c; */
+}
 
 .container_holder,
 .header_contents,
@@ -90,6 +91,7 @@ body {
 .contact_us,
 .project-categories {
   max-width: 1200px;
+  max-width: 1250px;
   margin: 0 auto;
   padding: 0 0px !important;
   min-width: 300px;
@@ -102,7 +104,12 @@ body {
 } */
 
 .navbar.scrolled {
-  background: linear-gradient(to right, rgba(224, 243, 255, 1), rgb(255, 255, 255), rgba(224, 243, 255, 1));
+  background: linear-gradient(
+    to right,
+    rgba(224, 243, 255, 1),
+    rgb(255, 255, 255),
+    rgba(224, 243, 255, 1)
+  );
 }
 
 .home_section {
@@ -284,7 +291,6 @@ a {
     color: var(--primary-text-color) !important;
   }
 
-
   .fiero_logo {
     height: 35px;
     height: 40px;
@@ -406,11 +412,11 @@ a {
 
 .our_company_policy .policy h1 {
   color: var(--paragraph-color);
+  font-size: 1.9rem !important;
 }
 
 .our_company_policy .home_para {
   color: var(--paragraph-text-color);
-  color: var(--paragraph-color);
 }
 
 .our_company_policy .policy {
@@ -421,7 +427,6 @@ a {
   gap: 150px;
   padding: 0 !important;
 }
-
 
 /* community reposnive */
 
@@ -463,6 +468,18 @@ a {
   }
 }
 
+
+@media screen and (max-width:1000px) {
+  .about_us .about_us_section {
+    order: 2;
+  }
+
+  .about_us .policy_img {
+    order: 1;
+  }
+
+}
+
 /* about us section */
 
 .about_us {
@@ -473,7 +490,23 @@ a {
 
 .about_us .policy_img {
   align-self: center;
- 
+  padding: 0 !important;
+  justify-content: center;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.about_us .policy_img img {
+  padding: 0 !important;
+  margin: 0 auto!important;
+
+}
+
+@media screen and (min-width: 500px) and (max-width: 850px) {
+  .about_us .policy_img img {
+    /* display: none; */
+  }
 }
 
 .about_us_section {
@@ -512,70 +545,31 @@ a {
   color: var(--orther-text-color);
 }
 
-.company_servies .services_holder .card {
-  background-color: #1e2738 !important;
-  background-color: #ffffff !important;
-  background: transparent !important;
-  padding: 20px 10px;
-  width: 300px;
-  margin: 0 10px;
-  display: flex;
-  align-items: center;
-  border-radius: 7px;
-  border: 1px solid #e0f3ffbc;
-
-}
 
 
 
-.company_servies .services_holder {
-  display: flex;
-  justify-content: center !important;
-  gap: 0 !important;
-}
-
-.company_servies .services_holder .col-md-4 {
-  margin-bottom: 30px;
-}
-
-.company_servies .services_holder .card .row {
-  display: flex;
-  flex-direction: column;
-  justify-self: center;
-  justify-content: space-evenly !important;
-  align-items: center;
-}
 
 
-
-.company_servies .services_holder .card .image_col {
-  align-items: center;
-  align-self: center;
-  padding: 0 !important;
-}
-
-.company_servies .services_holder .card span {
+.company_servies .service_holder .card span {
   font-size: 4rem;
   color: var(--dark-blue);
 }
 
-.company_servies .services_holder .card-title{
-  font-size: 1.1rem !important;
+.company_servies .service_holder .card-title {
+  font-size: 1.2rem !important;
+  font-weight: 400 !important;
 }
-.company_servies .services_holder .card .card-text{
-  font-size: .85rem !important;
+
+.company_servies .service_holder .card:hover .service_holder .card-title {
+  color: var(--light-orange) !important;
+}
+.company_servies .service_holder .card .card-text {
+  font-size: 0.95rem !important;
 }
 .company_servies .card-body {
   padding: 0 !important;
 }
 
-.company_servies .col-md-6 {
-  margin-bottom: 30px !important;
-}
-.company_servies .col-md-9 {
-  padding-left: 15px;
-  align-self: center;
-}
 
 .fiero_projects .container {
   width: 100% !important;
@@ -587,18 +581,7 @@ a {
   margin: 0 auto !important;
   text-align: center;
 }
-
-
-
-.company_servies .services_holder .card h5 {
-  color: var(--primary-text-color);
-  text-align: center;
-  font-size: 22px;
-  font-weight: 600;
-  margin-bottom: 15px;
-}
-
-.company_servies .services_holder .card p {
+.company_servies .service_holder .card p {
   text-align: center;
   font-size: 0.9rem;
 }
@@ -610,8 +593,6 @@ a {
   font-size: 2.5rem !important;
   font-weight: 400;
   font-style: normal;
-  /* background-color: #ff7900; */
-    mix-blend-mode: overlay !important;
 }
 
 h1 {
@@ -621,30 +602,32 @@ h1 {
   color: var(--primary-text-color);
 }
 
-.company_servies .services_holder .card-body {
+.company_servies .service_holder .card-body {
   width: 100% !important;
   margin: 0 auto !important;
   align-self: center;
+  justify-content: center;
   display: flex;
   flex-direction: column;
   gap: 10px;
+  padding: 0 !important;
 }
-.company_servies .services_holder .card-title {
+.company_servies .service_holder .card-title {
   width: 100% !important;
   margin: 0 !important;
 }
 
-.company_servies .services_holder .card img {
+.company_servies .service_holder .card img {
   height: 100px;
 }
 
 @media screen and (max-width: 767px) {
-  .company_servies .services_holder .card img {
+  .company_servies .service_holder .card img {
     height: 250px;
     margin-bottom: 5px;
   }
 
-  .company_servies .services_holder .card {
+  .company_servies .service_holder .card {
     background-color: #e0f3ffab !important;
     padding: 20px 10px;
   }
@@ -655,12 +638,12 @@ h1 {
 }
 
 @media screen and (max-width: 400px) {
-  .company_servies .services_holder .card img {
+  .company_servies .service_holder .card img {
     height: 200px;
   }
 }
 @media screen and (max-width: 400px) {
-  .company_servies .services_holder .card img {
+  .company_servies .service_holder .card img {
     height: 200px;
   }
 }
@@ -693,7 +676,6 @@ h1 {
   align-items: center;
   background: var(--primary-background);
   background: var(--dark-blue);
-
 }
 .facts .titles_holder {
   max-width: 600px;
@@ -702,8 +684,7 @@ h1 {
 }
 
 .facts .titles_holder .talking {
-  font-weight: 600;
-  color: var(--dark-orange);
+  font-weight: 500;
   color: #ffffff !important;
 }
 
@@ -722,13 +703,18 @@ h1 {
   margin-bottom: 20px;
 }
 
+.whole_facts_div .titles_holder p {
+  font-size: 0.9rem !important;
+  font-weight: 400 !important;
+}
+
 .whole_facts_div .talking {
   font-size: 24px;
   font-weight: bold;
   text-align: center;
 }
 
-.whole_facts_div h1{
+.whole_facts_div h1 {
   color: #ffffff;
 }
 
@@ -776,13 +762,13 @@ h1 {
 }
 
 .facts .card-deck .card-text {
-  color: #2f2e2e !important;
-  font-weight: bold;
+  color: var(--paragraph-text-color) !important;
+  font-weight: normal;
 }
 
 .facts .card-deck .card-title {
   font-size: 3rem;
-  font-weight: bolder;
+  font-weight: 500 !important;
   color: #2f2e2e !important;
 
   font-weight: 400;
@@ -805,9 +791,8 @@ h1 {
   color: var(--dark-orange);
 }
 
-
 .fiero_projects {
-  margin-top: 50px;
+  margin-top: 70px;
 }
 .projects {
   display: flex;
@@ -815,7 +800,6 @@ h1 {
   justify-content: center;
   flex-direction: column;
   gap: 10px !important;
-
 }
 .projects .card {
   background-color: transparent;
@@ -842,12 +826,12 @@ h1 {
 }
 
 .projects .card .card-body .project_category {
-  font-weight: bold;
+  font-weight: 600;
   color: var(--primary-text-color);
   margin: 0 !important;
 }
 .projects .card .card-body .project_description {
-  font-weight: bold;
+  font-weight: 600;
   color: var(--primary-text-color);
   line-height: 2rem;
   border-bottom: 2px solid var(--orther-text-color);
@@ -855,7 +839,7 @@ h1 {
 }
 
 .projects .card .card-body .sub_tittle {
-  font-size: 1.6rem !important;
+  font-size: 1.4rem !important;
   margin: 0 !important;
 }
 
@@ -870,7 +854,7 @@ h1 {
   z-index: 0;
 }
 
-.projects .card .proj_img img{
+.projects .card .proj_img img {
   border-radius: 12px !important;
 }
 
@@ -882,7 +866,7 @@ h1 {
   top: 0;
   left: 0;
   background: rgba(9, 77, 98, 0.5);
-  background: rgba(0, 0, 0,.5);
+  background: rgba(0, 0, 0, 0.3);
   z-index: 1;
   border-radius: 12px !important;
 }
@@ -933,7 +917,7 @@ h1 {
 }
 .accordion-button {
   box-shadow: none;
-  color:#ffffff !important;
+  color: #ffffff !important;
 }
 
 .questions .accordion-button {
@@ -959,13 +943,14 @@ h1 {
 
 .team_members .single-team-member {
   /* background-color: #1e2738; */
-  background:#e0f3ffab ;
+  background: #e0f3ff56 !important;
   border-radius: 12px;
   padding: 10px !important;
   margin-bottom: 20px;
+  border: 1px solid #00abde !important;
+
 }
 .team_members .single-team-member .team-member-thumb {
-  margin: 10px 50px;
   height: 170px;
   border-radius: 12px;
 
@@ -999,13 +984,13 @@ h1 {
 }
 .team_members .single-team-member .team-info .w-text {
   text-transform: uppercase;
-  font-size: 18px;
+  font-size: 14px;
   text-align: center;
   color: var(--primary-text-color);
 }
 .team_members .single-team-member .team-info .g-text {
   text-transform: uppercase;
-  font-size: 13px;
+  font-size: 0.75rem !important;
   margin-bottom: 0;
   text-align: center;
 }
@@ -1095,9 +1080,10 @@ h1 {
 .company_servies .card:hover {
   border: 1px solid var(--orther-text-color) !important;
   transition: all 0.5s ease-in;
-
 }
 
+.company_servies .card{
+}
 
 .our_company_policy .community_text {
   font-weight: 600;
@@ -1112,7 +1098,7 @@ h1.home_title {
 }
 
 h1 {
-  font-size: 2.5rem !important;
+  font-size: 2rem !important;
   font-weight: 700;
   font-style: normal;
   color: var(--primary-text-color);
@@ -1288,15 +1274,15 @@ h1,
 /* Add this CSS to your stylesheet */
 
 .blur-effect {
-  position: fixed; 
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(255, 255, 255, 0.5); 
-  backdrop-filter: blur(3px); 
-  z-index: 999; 
-  opacity: 0; 
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(3px);
+  z-index: 999;
+  opacity: 0;
   transition: opacity 0.5s ease;
   pointer-events: none;
 }
@@ -1310,18 +1296,17 @@ h1,
   margin: 0 !important;
 }
 
-
 .our_company_policy .policy_holder {
   display: flex;
 }
 
-.our_company_policy .policy_img img{
+.our_company_policy .policy_img img {
   padding: 0 !important;
   margin: 0 !important;
   align-self: center;
 }
 
-.our_company_policy .policy h1{
+.our_company_policy .policy h1 {
   width: 100% !important;
 }
 
@@ -1329,12 +1314,81 @@ h1,
   display: none;
 }
 
-
 .fiero_projects {
 }
-
 
 /* 
 icons in services
 
 */
+
+
+
+.company_servies .service_holder {
+display: flex;
+justify-content: center !important;
+flex-direction: row !important;
+}
+/* 
+.company_servies .service_holder .col-md-4 {
+  display: flex;
+  align-self: center;
+} */
+
+
+
+.company_servies .container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding:  0 !important;
+  margin: 0 auto;
+  border: 0 !important;
+}
+
+
+.company_servies .service_holder .services_contents {
+  border: 1px solid #e0f3ffbc; 
+  height: 100%;
+  width: 300px;
+  align-self: center;
+  padding: 20px 0 !important;
+  margin: 20px 0;
+  border-radius: 12px;
+  display: flex;
+  gap: 10px;
+}
+.company_servies .service_holder .services_contents:hover{
+  border: 1px solid var(--dark-orange); 
+  transition: all .5s ease-in-out;
+}
+
+
+
+
+.company_servies .service_holder  .card{
+  display: flex;
+  justify-content: center;
+  width: 300px;
+  margin: 0px auto !important;
+  border: 0 !important;
+
+
+}
+
+
+.company_servies .service_holder .card-title, 
+.company_servies .service_holder .card-text {
+  align-self: center;
+}
+
+.services_contents p{
+  padding: 5px 10px !important;
+}
+
+
+.services_contents:hover h5, .services_contents:hover span {
+  color: var(--dark-orange) !important;
+  transition: all .5s ease-in-out;
+
+}
