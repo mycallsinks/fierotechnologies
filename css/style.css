@@ -71,16 +71,10 @@ body {
 .home_section {
   background: radial-gradient(circle, #021735 10%, #092a5b 50%, #0c326f 100%);
 } */
-
+/* 
 body {
-  /* background: url("../images/homeimage/bodybg.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover; */
-
   background: linear-gradient(to right, #e0f3ffbc, #ffffff, #e0f3ffab);
-
-}
+} */
 
 .container_holder,
 .header_contents,
@@ -143,6 +137,7 @@ body {
   left: 30%;
   top: -20px;
   transform: rotate(45deg);
+  display: none;
 }
 .awesome_design_three {
   background-size: cover;
@@ -153,6 +148,7 @@ body {
   position: relative;
   left: 70%;
   transform: rotate(45deg);
+  display: none;
 }
 
 .awesome_design_two {
@@ -164,6 +160,7 @@ body {
   position: relative;
   left: 20%;
   transform: rotate(45deg);
+  display: none;
 }
 
 .awesome_design {
@@ -175,6 +172,7 @@ body {
   position: relative;
   left: 90%;
   transform: rotate(45deg);
+  display: none;
 }
 
 .awesome_design_footer {
@@ -186,6 +184,8 @@ body {
   position: relative;
   left: 70%;
   transform: rotate(45deg);
+
+  display: none;
 }
 
 html {
@@ -353,6 +353,7 @@ a {
 /* FOR ABOUT US */
 
 .about_content_holder {
+  height: 50dvh;
   order: 1;
   display: flex;
   justify-content: center;
@@ -516,32 +517,55 @@ a {
   background-color: #1e2738 !important;
   background-color: #ffffff !important;
   background: transparent !important;
-  padding: 20px 20px;
+  padding: 20px 10px;
+  width: 300px;
+  margin: 0 10px;
   display: flex;
   align-items: center;
-  justify-content: center;
   border-radius: 7px;
   border: 1px solid #e0f3ffbc;
+
 }
+
+
 
 .company_servies .services_holder {
   display: flex;
+  justify-content: center !important;
+  gap: 0 !important;
+}
+
+.company_servies .services_holder .col-md-4 {
+  margin-bottom: 30px;
 }
 
 .company_servies .services_holder .card .row {
   display: flex;
+  flex-direction: column;
+  justify-self: center;
+  justify-content: space-evenly !important;
+  align-items: center;
 }
+
+
+
 .company_servies .services_holder .card .image_col {
   align-items: center;
   align-self: center;
   padding: 0 !important;
 }
 
-.company_servies .services_holder .card img {
-  border-radius: 7px;
-  width: 100%;
+.company_servies .services_holder .card span {
+  font-size: 4rem;
+  color: var(--dark-blue);
 }
 
+.company_servies .services_holder .card-title{
+  font-size: 1.1rem !important;
+}
+.company_servies .services_holder .card .card-text{
+  font-size: .85rem !important;
+}
 .company_servies .card-body {
   padding: 0 !important;
 }
@@ -565,16 +589,18 @@ a {
   text-align: center;
 }
 
+
+
 .company_servies .services_holder .card h5 {
   color: var(--primary-text-color);
-  text-align: left;
+  text-align: center;
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 15px;
 }
 
 .company_servies .services_holder .card p {
-  text-align: left;
+  text-align: center;
   font-size: 0.9rem;
 }
 
@@ -766,21 +792,23 @@ h1 {
 
 .facts .card-deck i {
   display: block;
-  font-size: 3rem;
-  width: 80px;
+  font-size: 2.5rem;
+  width: 70px;
+  height: 70px;
   text-align: center;
   padding: 10px 10px;
   margin-top: 30px;
   margin-bottom: 10px;
   background: var(--linear);
   background: var(--dark-blue);
-  border-radius: 12px;
+  border-radius: 50%;
+  align-self: center;
   color: var(--dark-orange);
 }
 
 
 .fiero_projects {
-  margin-top: 70px;
+  margin-top: 50px;
 }
 .projects {
   display: flex;
@@ -843,6 +871,10 @@ h1 {
   z-index: 0;
 }
 
+.projects .card .proj_img img{
+  border-radius: 12px !important;
+}
+
 .projects .card .proj_img::after {
   position: absolute;
   content: "";
@@ -853,6 +885,7 @@ h1 {
   background: rgba(9, 77, 98, 0.5);
   background: rgba(0, 0, 0,.5);
   z-index: 1;
+  border-radius: 12px !important;
 }
 
 .our_company_policy .container {
@@ -1063,19 +1096,9 @@ h1 {
 .company_servies .card:hover {
   border: 1px solid var(--orther-text-color) !important;
   transition: all 0.5s ease-in;
+
 }
 
-/* .projects_holder .graphicsProjectsSlides {
-  border: 1px solid red !important;
-}
-.projects_holder .graphicsProjectsSlides .carousel-inner {
-  border: 1px solid green !important;
-} */
-
-/* .projects_holder .graphicsProjectsSlides img{
-  width: 100%;
-  min-width: 565px !important;
-} */
 
 .our_company_policy .community_text {
   font-weight: 600;
@@ -1135,8 +1158,8 @@ button a {
 }
 
 .navbar-toggler {
-  background: var(--dark-blue) !important;
-  border: 1px solid var(--dark-blue);
+  background: var(--dark-orange) !important;
+  border: 1px solid var(--dark-orange);
 }
 .nav_btn {
   background: var(--dark-orange) !important;
@@ -1266,17 +1289,17 @@ h1,
 /* Add this CSS to your stylesheet */
 
 .blur-effect {
-  position: fixed; /* Cover the entire viewport */
+  position: fixed; 
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(255, 255, 255, 0.5); /* Light background for blur effect */
-  backdrop-filter: blur(3px); /* Adjust blur strength as needed */
-  z-index: 999; /* Ensure it’s above other content */
-  opacity: 0; /* Hidden by default */
-  transition: opacity 0.5s ease; /* Smooth transition for opacity */
-  pointer-events: none; /* Prevent interactions with the blur effect */
+  background: rgba(255, 255, 255, 0.5); 
+  backdrop-filter: blur(3px); 
+  z-index: 999; 
+  opacity: 0; 
+  transition: opacity 0.5s ease;
+  pointer-events: none;
 }
 
 .blur-effect.show {
@@ -1310,3 +1333,9 @@ h1,
 
 .fiero_projects {
 }
+
+
+/* 
+icons in services
+
+*/

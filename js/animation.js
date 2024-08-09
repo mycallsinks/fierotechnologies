@@ -120,21 +120,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
 // new 
 
-
-// document.addEventListener('DOMContentLoaded', () => {
-//     const blurEffect = document.querySelector('.blur-effect');
-//     const toggleButton = document.querySelector('.navbar-toggler'); // Adjust selector if necessary
-
-//     toggleButton.addEventListener('click', () => {
-//         if (blurEffect.style.display === 'none' || blurEffect.style.display === '') {
-//             blurEffect.style.display = 'block';
-//         } else {
-//             blurEffect.style.display = 'none';
-//         }
-//     });
-// });
-
-
 document.addEventListener('DOMContentLoaded', () => {
     const blurEffect = document.querySelector('.blur-effect');
     const toggleButton = document.querySelector('.navbar-toggler');
