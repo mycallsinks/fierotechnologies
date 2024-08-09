@@ -4,12 +4,12 @@ nav {
   width: 100%;
   margin: 0 auto;
   transition: all 0.2s ease-in-out;
-  background-color: #021735e5;
+  /* background-color: #021735e5; */
 }
 
 @media screen and (max-width: 767px) {
   nav {
-    background-color: #021735f0;
+    /* background-color: #021735f0; */
   } 
 }
 
@@ -138,7 +138,6 @@ nav {
 .about_us img {
   background: transparent;
   width: auto;
-  transform: scale(1.25);
   animation: floatImg 5s ease-in-out infinite;
 }
 
@@ -158,18 +157,17 @@ nav {
   .about_us img {
     background: transparent;
     width: auto;
-    transform: scale(0.95);
     animation: floatImg 5s ease-in-out infinite;
   }
 
   @keyframes floatImg {
     0%,
     100% {
-      transform: translateY(0) scale(0.95);
+      transform: translateY(0) ;
     }
 
     50% {
-      transform: translateY(-10px) scale(0.95);
+      transform: translateY(-10px);
     }
   }
 }
@@ -203,6 +201,8 @@ nav {
   width: 100%;
   height: 100%;
   background: var(--primary-background);
+  background: rgba(224, 243, 255, 1);
+
   display: flex;
   justify-content: center;
   flex-direction: column;

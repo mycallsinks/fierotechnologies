@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Fiero Technologies! We offer innovative tech solutions, including web development, app development, design & graphics, and iDevice repairs." />
+    <meta name="description"
+        content="Fiero Technologies! We offer innovative tech solutions, including web development, app development, design & graphics, and iDevice repairs." />
 
     <title>Fiero Technologies</title>
     <!-- Google tag (gtag.js) -->
@@ -31,10 +32,17 @@
     <!-- google fonts -->
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;600;800;900;1000&display=swap">
-
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Open+Sans:400,450,500,520,550,600,700,900,1000">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/018d9ba538.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -54,7 +62,7 @@
         href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Michroma&family=Orbitron:wght@400..900&display=swap"
         rel="stylesheet">
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 
     <!-- css external  stylesheet -->
@@ -64,8 +72,9 @@
     <link rel="stylesheet" href="./css/services.css">
 </head>
 
-<body>
+<!-- <body class="bg-body-tertiary"> -->
 
+<body>
     <div id="loader">
         <div class="spinner">
 
@@ -78,19 +87,18 @@
     <!-- main holder -->
 
     <div class="nav_holder ">
-        <!-- header here -->
+
         <nav class="navbar navbar-expand-md p-0">
-            <div class="container-fluid header_contents  pb-3 pt-3">
+            <div class="container-fluid header_contents pb-3 pt-3">
                 <a class="navbar-brand text-light" href="./index.html">
-                    <img class="fiero_logo p-0 m-0" src="./logo/fiero.png" alt="">
+                    <!-- <img class="fiero_logo p-0 m-0" src="./logo/fiero.png" alt=""> -->
+                    <img class="fiero_logo p-0 m-0" src="./images/logoimages/Colored For Light Backgrounds.png" alt="">
                 </a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
-                    <!-- <span class="navbar-toggler-icon"> -->
-                        <i class="fa-solid fa-bars"></i>
-                    <!-- </span> -->
+                    <i class="fa-solid fa-bars"></i>
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -98,27 +106,25 @@
                         <li class="nav-item active_link">
                             <a class="nav-link" aria-current="page" href="./index.html">Home</a>
                         </li>
-
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="./aboutus.html">About Us</a>
                         </li>
-
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="./services.html">Services</a>
                         </li>
-
                         <li class="nav-item">
                             <a class="nav-link " aria-current="page" href="./projects.html">Our Projects</a>
                         </li>
-
-
                     </ul>
                     <button type="button" class="btn nav_btn">
-                        <a class="nav-link " href="./contactus.html">Contact us</a> </button>
+                        <a class="nav-link " href="./contactus.html">Contact us</a>
+                    </button>
                 </div>
-
             </div>
         </nav>
+
+        <!-- Blur effect overlay -->
+        <div class="blur-effect"></div>
 
     </div>
 
@@ -127,9 +133,9 @@
             <div class="container">
                 <div class="row">
 
-                    <div class="col-12 col-md-6 opening_content  p-0 m-0 ">
+                    <div class="col-12 col-md-7 opening_content  p-0 m-0 ">
                         <h1 class="home_title">
-                             Where Tech Solutions meet their quality
+                            Where Tech Solutions meet their quality
                         </h1>
                         <p class="home_para">
                             We create dynamic websites, apps, and software, while also resolving tech issues from
@@ -137,17 +143,17 @@
                         </p>
 
                         <div class="action_btns">
-                            <button type="button" class="btn btn-primary act_btn">Our Services</button>
+                            <button type="button" class="btn btn-primary act_btn">Services</button>
                             <a href="tel:+260974286888">
-                                <button type="button" class="btn btn-primary act_btn act_btn_second">Call Us</button>
+                                <button type="button" class="btn btn-primary act_btn act_btn_second">Projects</button>
                             </a>
 
                         </div>
 
                     </div>
-                    <div class="col-12 col-md-6 home_image p-0 m-0 ">
-                        <img class="img-fluid" src="./images/home_image_two.png" alt="">
-                    
+                    <div class="col-12 col-md-5 home_image p-0 m-0 ">
+                        <!-- <img class="img-fluid" src="./images/home_image_two.png" alt=""> -->
+
                     </div>
                 </div>
             </div>
@@ -155,51 +161,20 @@
     </section>
 
 
-
-    <section class="our_company_policy ">
-
-        <div class="container">
-            <div class="row policy_holder  ">
-
-                <div class="col-12 col-md-4 policy policy_img">
-                    <img class="img-fluid" src="./images/policy.png" alt="">
-                </div>
-                <div class="col-12 col-md-4 policy">
-                    <p class="text-center community_text">Our Company policy.</p>
-                    <h1>
-                        Ensure data protection and access control
-                    </h1>
-
-                </div>
-
-                <div class="col-12 col-md-4  policy policy_text action_btns">
-                    <p class="home_para">
-                        Specializes in building advanced websites and apps, ensuring top-notch security, and delivering
-                        striking design and graphics. We combine innovation with reliability to create digital solutions
-                        that stand out and protect.
-                    </p>
-                </div>
-            </div>
-        </div>
-        </div>
-
-    </section>
-
-
-    <div class="awesome_design_three">
+    <div class="awesome_design_one">
 
     </div>
 
 
-    <section class="about_us">
-        <div class="container">
+    <section class="about_us ">
+        <div class="container-lg p-0 m-0">
             <div class="row policy_holder">
 
                 <div class="col-12 col-md-6 about_us_section action_btns">
                     <p class="text-center community_text">About Our IT Technology Agency.</p>
 
                     <h1 class="">
-                        Innovative Solutions in Web and App Development
+                        Innovative Solutions in Website and Application Development
                     </h1>
                     <p class="">
                         We excel in crafting bespoke websites and applications, offering top-tier solutions for both web
@@ -222,18 +197,58 @@
                         <li><i class="fa-solid fa-shield-halved"></i> Expert support for resolving a wide range of tech
                             issues.</li>
                     </ul>
-                    <button type="button" class="btn btn-primary nav_btn">
-                        <a class="nav-link" href="./services.html">Get Yours Done</a> </button>
+                    <div class="action_btns">
+                        <button type="button" class="btn btn-primary act_btn">
+                            <a class="text-light" href="./services.html">Get yours done</a>
+                        </button>
+
+                    </div>
                 </div>
 
                 <div class="col-12 col-md-6 policy policy_img">
-                    <img class="img-fluid" src="./images/about.jpg" alt="Tech Innovators Inc. Team">
+                    <img class="img-fluid" src="./images/aboutimage.png" alt="Tech Innovators Inc. Team">
                 </div>
             </div>
         </div>
     </section>
 
     <div class="awesome_design_three">
+
+    </div>
+
+
+    <section class="our_company_policy ">
+
+        <div class="container">
+            <p class="text-center community_text">Our Company policy.</p>
+            <div class="row policy_holder ">
+
+                <div class="col-12 col-md-3 policy policy_img">
+                    <img class="img-fluid" src="./images/policy.png" alt="">
+                </div>
+                <div class="col-12 col-md-5 policy ">
+                    <!-- <p class="text-center community_text">Our Company policy.</p> -->
+                    <h1>
+                        Ensure data protection and access control
+                    </h1>
+
+                </div>
+
+                <div class="col-12 col-md-4  policy policy_text">
+                    <p class="home_para">
+                        Specializes in building advanced websites and apps, ensuring top-notch security, and delivering
+                        striking design and graphics. We combine innovation with reliability to create digital solutions
+                        that stand out and protect.
+                    </p>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    </section>
+
+
+    <div class="awesome_design_one">
 
     </div>
 
@@ -344,28 +359,30 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="col-12 col-md-6">
                     <div class="card mb-2">
                         <div class="row g-0">
                             <div class="col-md-3 image_col">
-                                <img src="./images/softwareDevelopment.jpeg" class="img-fluid rounded-start" alt="Tech Support">
+                                <img src="./images/softwareDevelopment.jpeg" class="img-fluid rounded-start"
+                                    alt="Tech Support">
                             </div>
                             <div class="col-md-9">
                                 <div class="card-body">
                                     <h5 class="card-title">Tech Support</h5>
-                                    <p class="card-text">Register with us to troubleshoot and resolve your device problems, ensuring minimal downtime and smooth operations.</p>
+                                    <p class="card-text">Register with us to troubleshoot and resolve your device
+                                        problems, ensuring minimal downtime and smooth operations.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                
+
             </div>
         </div>
     </section>
 
-    <div class="awesome_design_three">
+    <div class="mt-4">
 
     </div>
 
@@ -444,7 +461,7 @@
                             <div class="col-md-3">
                                 <div class="card-body">
                                     <h5 class="card-title sub_tittle">ZedStories</h5>
-                                    <p class="card-text project_category">Web Development</p>
+                                    <p class="card-text project_category">websites</p>
                                     <p class="card-text project_description">
                                         <a href="https://zedstories.online/" target="_blank">Full Project View</a>
                                     </p>
@@ -464,7 +481,7 @@
                             <div class="col-md-3">
                                 <div class="card-body">
                                     <h5 class="card-title sub_tittle">M.Tasty Logo</h5>
-                                    <p class="card-text project_category">design & graphics</p>
+                                    <p class="card-text project_category">Designs</p>
                                     <p class="card-text project_description">
                                         <a href="#" data-bs-toggle="modal" data-bs-target="#projectModal"
                                             data-image="./projectsimages/graphicsdesignimages/m.tasty.jpg">Full
@@ -490,7 +507,7 @@
                             <div class="col-md-3">
                                 <div class="card-body">
                                     <h5 class="card-title sub_tittle">Clinic Template</h5>
-                                    <p class="card-text project_category">Web Development</p>
+                                    <p class="card-text project_category">Websites</p>
                                     <p class="card-text project_description">
                                         <a href="https://michaelsinkamba.com/fierotechsclinic/" target="_blank">Full
                                             Project View</a>
@@ -511,12 +528,11 @@
                             <div class="col-md-3">
                                 <div class="card-body">
                                     <h5 class="card-title sub_tittle">Trade Hub E-commerce App</h5>
-                                    <p class="card-text project_category">App Development</p>
+                                    <p class="card-text project_category">applications</p>
                                     <p class="card-text project_description ">
-                                        <a href="https://play.google.com/store/apps/details?id=com.release.tradehub" target="_blank">Download App</a>
-                                        | or |
-                                        <a href="https://trade-hub-mu.web.app/" target="_blank">Full
-                                            Project Webapp</a>
+                                        <a href="https://play.google.com/store/apps/details?id=com.release.tradehub"
+                                            target="_blank">Full
+                                            Project View</a>
                                     </p>
                                 </div>
                             </div>
@@ -583,7 +599,8 @@
                             <div id="collapseTwo" class="accordion-collapse collapse"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    To request a quote, please visit our services page and fill out the form of your serice with details
+                                    To request a quote, please visit our services page and fill out the form of your
+                                    serice with details
                                     about your project. Our team will get back to you with a customized quote.
                                 </div>
                             </div>
@@ -854,7 +871,6 @@
 
     <script src="./js/animation.js"></script>
     <script src="./js/script.js"></script>
-
 
 </body>
 

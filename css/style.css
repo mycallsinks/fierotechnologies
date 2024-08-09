@@ -1,3 +1,7 @@
+/* fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
 /* reset sheet */
 * {
   margin: 0;
@@ -13,13 +17,16 @@
   /* Background Colors */
 
   --primary-bg-color: #021735;
-  /* --primary-bg-color: #0b2c57; */
-  --secondary-bg-color: #d7dfef;
+  --primary-bg-color: #0b2c57;
   /* Text Colors */
 
   --primary-text-color: #ffff;
+  --primary-text-color: #000 !important;
+  --primary-text-color: #000000f1 !important;
   --primary-two-color: #021735;
   --paragraph-text-color: #ffffff80;
+  --paragraph-text-color: #000 !important;
+  --paragraph-text-color: rgba(0, 0, 0, 0.8) !important;
   --secondary-text-color: #d7dfef;
   --orther-text-color: #ff7900;
   --linear: linear-gradient(130deg, #ff7900, #00abde);
@@ -30,8 +37,8 @@
   --blue-buttons: #00abde;
   --font-family: "Poppins", sans-serif;
 
-  --primary-background:#0071c3;
-  --secondary-bakcground:#fe5800;
+  --primary-background: #0071c3;
+  --secondary-bakcground: #fe5800;
   --light-orange: #ff7900;
   --dark-orange: #fe5800;
   --dark-blue: #0071c3;
@@ -39,67 +46,41 @@
   /* Button Colors */
 
   /* fonts */
-  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol";
-  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
-    "Liberation Mono", "Courier New", monospace;
+
+  /* redesign */
+
+  --primary-color: #0071c3;
+  --secondary-color: #fe5800;
+  --light-gray: #f7f7f7;
+  --dark-gray: #333333;
+  --white-color: #ffffff;
+  --paragraph-color: #000;
 }
 
 /* default styles */
 body {
-  background-color: var(--primary-bg-color);
-  font-family: "Poppins", sans-serif;
-  font-family: sans-serif;
+  /* background-color: var(--primary-bg-color); */
+  /* background-color: var(--primary-bg-color); */
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-family: "Kanit", sans-serif;
+  font-style: normal;
 }
 
-.nav_holder,
+/* 
 .home_section {
   background: radial-gradient(circle, #021735 10%, #092a5b 50%, #0c326f 100%);
-}
+} */
 
-
-.home_content_holder  .home_title,  .home_content_holder  .home_para,  .home_content_holder  .action_btns, .home_image{
-  color: var(--primary-text-color) !important;
-  z-index: 100;
-}
-
-.about_content_holder  h1,.about_content_holder .service_tittles,  .about_content_holder  p{
-  color: var(--primary-text-color) !important;
-  z-index: 100;
-}
-
-.about_content_holder .service_tittles{
-  position: relative;
-}
-
-
-.home_content_holder  .home_para{
-  color: var(--paragraph-text-color) !important;
-}
-
-
-.home_section{
-  background: url(../images/homeimage/homeimages.jpg);
+body {
+  /* background: url("../images/homeimage/bodybg.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
-  position: relative;
-  z-index: 0;
+  background-size: cover; */
+
+  background: linear-gradient(to right, #e0f3ffbc, #ffffff, #e0f3ffab);
+
 }
-
-
-.home_section::after {
-  position: absolute;
-  content: '';
-  width: 100%;
-  top: 0;
-  left: 0;
-  height: 100%;
-  background: rgba(0, 0, 0, 1);
-  opacity: .9;
-  z-index: 1;
-  }
 
 .container_holder,
 .header_contents,
@@ -117,10 +98,24 @@ body {
 .project-categories {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 5px;
+  padding: 0 0px !important;
   min-width: 300px;
   width: 100%;
   min-width: 300px !important;
+}
+
+.navbar {
+  background: linear-gradient(to right, rgba(224, 243, 255, 1), rgb(255, 255, 255), rgba(224, 243, 255, 1));
+}
+
+.home_section {
+  background: url(../images/homeimage/homeimages.jpg);
+  background: url(../images/homeimage/home7.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 0;
 }
 
 .home_section .container {
@@ -134,6 +129,17 @@ body {
   padding: 10px !important;
 }
 
+.awesome_design_one {
+  background-size: cover;
+  overflow: hidden;
+  height: 50px;
+  width: 50px;
+  border: 1px solid var(--dark-orange);
+  position: relative;
+  left: 30%;
+  top: -20px;
+  transform: rotate(45deg);
+}
 .awesome_design_three {
   background-size: cover;
   overflow: hidden;
@@ -141,12 +147,11 @@ body {
   width: 50px;
   border: 1px solid var(--dark-orange);
   position: relative;
-  left: 40%;
+  left: 70%;
   transform: rotate(45deg);
 }
 
 .awesome_design_two {
-
   background-size: cover;
   overflow: hidden;
   height: 50px;
@@ -169,7 +174,6 @@ body {
 }
 
 .awesome_design_footer {
-
   background-size: cover;
   overflow: hidden;
   height: 50px;
@@ -193,7 +197,7 @@ html {
 p {
   color: var(--primary-text-color);
   color: var(--paragraph-text-color);
-  font-size: .9rem !important;
+  font-size: 0.98rem !important;
 }
 
 .code_style i {
@@ -209,13 +213,17 @@ a {
 }
 
 .navbar-brand {
-  font-weight: 1000;
+  font-weight: 9000;
 }
 
 .fiero_logo {
   height: 35px;
+  height: 50px;
   width: 150px;
+  width: 170px;
   margin-left: -100px;
+  z-index: 10000;
+  color: #ffffff !important;
 }
 .navbar-nav {
   margin: 0 5% 0 0;
@@ -273,10 +281,15 @@ a {
     color: var(--primary-text-color) !important;
   }
 
-  .navbar .fiero_logo {
+
+  .fiero_logo {
     height: 35px;
+    height: 40px;
     width: 150px;
+    width: 130px;
     margin-left: -100px;
+    z-index: 10000;
+    color: #ffffff !important;
   }
 
   .navbar-nav {
@@ -289,15 +302,13 @@ a {
 
 .home_content_holder {
   /* height: 100dvh; */
-  height: calc(100dvh 65px) !important;
+  height: calc(100dvh) !important;
   display: flex;
   justify-content: center;
   align-items: center;
   padding-top: 70px !important;
   z-index: 100;
-
 }
-
 
 .home_image {
   position: relative;
@@ -311,7 +322,6 @@ a {
   width: auto;
   transform: scale(1.25) !important;
 } */
-
 
 @media screen and (min-width: 767px) {
   .home_content_holder {
@@ -339,7 +349,6 @@ a {
 /* FOR ABOUT US */
 
 .about_content_holder {
-  height: 50dvh;
   order: 1;
   display: flex;
   justify-content: center;
@@ -371,13 +380,17 @@ a {
 }
 
 .our_company_policy {
-  padding-top: 50px;
+  margin-top: 50px;
   display: flex;
   align-items: center;
 }
 
+.our_company_policy .container {
+  display: flex;
+  flex-direction: column;
+}
 .our_company_policy .policy img {
-  max-width: 280px;
+  max-width: 230px;
   margin: 0 auto;
 }
 
@@ -387,8 +400,13 @@ a {
   color: var(--orther-text-color);
 }
 
+.our_company_policy .policy h1 {
+  color: var(--paragraph-color);
+}
+
 .our_company_policy .home_para {
   color: var(--paragraph-text-color);
+  color: var(--paragraph-color);
 }
 
 .our_company_policy .policy {
@@ -396,21 +414,16 @@ a {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  gap: 15px;
+  gap: 150px;
   padding: 0 !important;
 }
 
-.our_company_policy .policy_text {
-  padding: 10px 15px !important;
-
-  border-left: 1px solid var(--primary-text-color);
-}
 
 /* community reposnive */
 
 @media screen and (max-width: 767px) {
   .our_company_policy .policy img {
-    transform: scale(0.8);
+    transform: scale(1);
     width: 100%;
   }
 
@@ -419,6 +432,7 @@ a {
     border: none;
     border-left: 2px solid var(--primary-text-color);
     border-right: 2px solid var(--primary-text-color);
+    text-align: center;
   }
 
   .code_style i {
@@ -455,6 +469,7 @@ a {
 
 .about_us .policy_img {
   align-self: center;
+ 
 }
 
 .about_us_section {
@@ -462,19 +477,22 @@ a {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  gap: 5px;
+  gap: 10px;
+  margin: 0 !important;
 }
 
 .about_us .list_group {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .about_us .list_group li {
   background: transparent !important;
   border: none;
   color: var(--primary-text-color);
-  padding: 5px 0;
-  list-style-type: none; /* Remove default bullets */
+  list-style-type: none !important;
 }
 
 .about_us .list_group i {
@@ -492,13 +510,14 @@ a {
 
 .company_servies .services_holder .card {
   background-color: #1e2738 !important;
+  background-color: #ffffff !important;
+  background: transparent !important;
   padding: 20px 20px;
-
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 7px;
-  /* max-width: 550px; */
+  border: 1px solid #e0f3ffbc;
 }
 
 .company_servies .services_holder {
@@ -557,9 +576,13 @@ a {
 
 .sub_tittle {
   color: var(--primary-text-color) !important;
+  color: var(--orther-text-color) !important;
+  color: var(--dark-orange) !important;
   font-size: 2.5rem !important;
   font-weight: 400;
   font-style: normal;
+  /* background-color: #ff7900; */
+    mix-blend-mode: overlay !important;
 }
 
 h1 {
@@ -593,7 +616,7 @@ h1 {
   }
 
   .company_servies .services_holder .card {
-    background-color: #1e2738 !important;
+    background-color: #e0f3ffab !important;
     padding: 20px 10px;
   }
 
@@ -640,16 +663,19 @@ h1 {
   justify-content: center;
   align-items: center;
   background: var(--primary-background);
+  background: var(--dark-blue);
+
 }
 .facts .titles_holder {
-  max-width: 500px;
+  max-width: 600px;
   padding: 70px 0;
   text-align: center;
 }
 
 .facts .titles_holder .talking {
   font-weight: 600;
-  color: var(--primary-text-color);
+  color: var(--dark-orange);
+  color: #ffffff !important;
 }
 
 /* testing */
@@ -673,6 +699,10 @@ h1 {
   text-align: center;
 }
 
+.whole_facts_div h1{
+  color: #ffffff;
+}
+
 .whole_facts_div .sub_tittle {
   font-size: 20px;
 }
@@ -684,6 +714,7 @@ h1 {
 
 .whole_facts_div .card-body p {
   font-size: 14px;
+  color: #ffffff;
 }
 
 .facts .card-deck {
@@ -701,6 +732,7 @@ h1 {
   justify-content: center;
   align-items: center;
   border-bottom: 3px solid var(--orther-text-color);
+  border-bottom: 5px solid var(--dark-blue);
   padding: 10px 50px;
 }
 
@@ -737,15 +769,22 @@ h1 {
   margin-top: 30px;
   margin-bottom: 10px;
   background: var(--linear);
+  background: var(--dark-blue);
   border-radius: 12px;
+  color: var(--dark-orange);
 }
 
+
+.fiero_projects {
+  margin-top: 70px;
+}
 .projects {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   gap: 10px !important;
+
 }
 .projects .card {
   background-color: transparent;
@@ -807,8 +846,8 @@ h1 {
   height: 100%;
   top: 0;
   left: 0;
-  background: rgba(9, 77, 98, 0.3);
-
+  background: rgba(9, 77, 98, 0.5);
+  background: rgba(0, 0, 0,.5);
   z-index: 1;
 }
 
@@ -822,8 +861,9 @@ h1 {
 .our_company_policy .home_title {
   width: 100%;
   text-align: right;
-  padding-right: 20px;
+  /* padding-right: 20px; */
   align-self: center;
+  border: 1px solid green;
 }
 
 .project_into {
@@ -857,6 +897,7 @@ h1 {
 }
 .accordion-button {
   box-shadow: none;
+  color:#ffffff !important;
 }
 
 .questions .accordion-button {
@@ -881,7 +922,8 @@ h1 {
 }
 
 .team_members .single-team-member {
-  background-color: #1e2738;
+  /* background-color: #1e2738; */
+  background:#e0f3ffab ;
   border-radius: 12px;
   padding: 10px !important;
   margin-bottom: 20px;
@@ -890,7 +932,8 @@ h1 {
   margin: 10px 50px;
   height: 170px;
   border-radius: 12px;
-  background: var(--secondary-bakcground);
+
+  background: var(--light-blue);
   position: relative;
 }
 .team_members .single-team-member .team-member-thumb .team-social-icon a {
@@ -962,10 +1005,10 @@ h1 {
 .footer {
   position: relative;
   width: 100%;
-  border-top: 2px solid var(--primary-background);
   overflow: hidden;
   margin-top: 100px;
   padding: 30px 5px;
+  background: rgba(224, 243, 255, 1);
 }
 
 @media screen and (max-width: 767px) {
@@ -1037,13 +1080,17 @@ h1 {
 }
 
 h1.home_title {
-  font-size: 3rem !important;
+  font-size: 3.6rem !important;
+  font-weight: 800 !important;
+  font-weight: bolder !important;
 }
+
 h1 {
-  font-size: 2.2rem !important;
-  font-weight: 600;
+  font-size: 2.5rem !important;
+  font-weight: 700;
   font-style: normal;
   color: var(--primary-text-color);
+  padding: 0 !important;
 }
 
 @media screen and (max-width: 767px) {
@@ -1052,7 +1099,7 @@ h1 {
   }
 
   h1 {
-    font-size: 1.8rem !important;
+    font-size: 1.7rem !important;
     font-weight: 600;
   }
 }
@@ -1076,7 +1123,6 @@ h1,
   border-radius: 40px;
   background: var(--light-orange) !important;
   background: var(--dark-orange) !important;
-
 }
 
 .action_btns button,
@@ -1086,29 +1132,24 @@ button a {
 
 .navbar-toggler {
   background: var(--dark-blue) !important;
-  border: 1px solid var(--dark-blue) ;
-
+  border: 1px solid var(--dark-blue);
 }
 .nav_btn {
   background: var(--dark-orange) !important;
   border: 1px solid var(--dark-orange);
-
 }
-
 
 .act_btn_second {
   background: var(--dark-blue) !important;
   border: 1px solid var(--dark-blue);
 }
 
-
-
 body,
 p,
 .sub_tittle,
 h1,
 .community_text,
-.card-body h5{
+.card-body h5 {
   font-family: "Poppins", sans-serif !important;
   font-family: var(--font-family) !important;
 }
@@ -1122,7 +1163,8 @@ h1,
   margin: 0 !important;
 }
 
-.nav_btn a , .btn a{
+.nav_btn a,
+.btn a {
   padding: 0px 0px !important;
   margin: 0 !important;
 }
@@ -1137,16 +1179,14 @@ h1,
 
 /* hovers */
 
-
-
-
 @media screen and (max-width: 767px) {
   .action_btns,
-  .act_btn{
+  .act_btn {
     padding: 13px 15px !important;
   }
 
-  .nav_btn a, .btn a {
+  .nav_btn a,
+  .btn a {
     padding: 0px 0px !important;
   }
 
@@ -1156,7 +1196,6 @@ h1,
   .navbar .btn a {
     padding: 0px 0px !important;
   }
-
 }
 
 .code_style i {
@@ -1167,13 +1206,12 @@ h1,
   color: var(--dark-orange);
 }
 
-
-
-.navbar, .header_contents { 
-  padding:5px 0px !important;
+.navbar,
+.header_contents {
+  padding: 5px 0px !important;
 }
 
-@media screen and (min-width:767px) {
+@media screen and (min-width: 767px) {
   .navbar {
     background-size: 100%;
   }
@@ -1184,9 +1222,86 @@ h1,
   color: var(--primary-text-color) !important;
 }
 
-.navbar-toggler .fa-bars{
+.navbar-toggler .fa-bars {
   display: inline-block;
   color: var(--primary-text-color) !important;
   padding: 6px;
 }
 
+/* redesign */
+.header_contents {
+  padding: 0 5px !important;
+}
+
+.home_section .home_title {
+  text-align: left;
+}
+
+@media screen and (max-width: 767px) {
+  .navbar .navbar-nav li a {
+    color: var(--dark-blue) !important;
+    color: var(--dark-orange) !important;
+  }
+}
+
+.header_contents * {
+  color: #ffffff;
+}
+
+.navbar {
+  position: relative;
+}
+
+.about_us {
+  /* height: 100dvh; */
+  display: flex;
+  align-items: center;
+  padding: 0 10px !important;
+}
+
+/* Add this CSS to your stylesheet */
+
+.blur-effect {
+  position: fixed; /* Cover the entire viewport */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5); /* Light background for blur effect */
+  backdrop-filter: blur(3px); /* Adjust blur strength as needed */
+  z-index: 999; /* Ensure it’s above other content */
+  opacity: 0; /* Hidden by default */
+  transition: opacity 0.5s ease; /* Smooth transition for opacity */
+  pointer-events: none; /* Prevent interactions with the blur effect */
+}
+
+.blur-effect.show {
+  opacity: 1; /* Show the blur effect */
+}
+
+.about_us .about_us_section {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+
+.our_company_policy .policy_holder {
+  display: flex;
+}
+
+.our_company_policy .policy_img img{
+  padding: 0 !important;
+  margin: 0 !important;
+  align-self: center;
+}
+
+.our_company_policy .policy h1{
+  width: 100% !important;
+}
+
+.company_servies {
+}
+
+
+.fiero_projects {
+}
