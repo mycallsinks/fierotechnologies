@@ -143,3 +143,19 @@ document.addEventListener('DOMContentLoaded', () => {
         blurEffect.classList.toggle('show');
     });
 });
+
+// 
+// nav bar show when scrolled
+window.addEventListener('scroll', function() {
+    const navbar = document.querySelector('.navbar');
+    
+    // Check if the page has been scrolled past the height of the navbar
+    if (window.scrollY > navbar.offsetHeight) {
+      // Apply the gradient background when the navbar is scrolled past
+      navbar.classList.add('scrolled');
+    } else {
+      // Remove the gradient background when the navbar is in view
+      navbar.classList.remove('scrolled');
+    }
+  });
+  

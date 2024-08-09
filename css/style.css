@@ -104,7 +104,11 @@ body {
   min-width: 300px !important;
 }
 
-.navbar {
+/* .navbar {
+  background: linear-gradient(to right, rgba(224, 243, 255, 1), rgb(255, 255, 255), rgba(224, 243, 255, 1));
+} */
+
+.navbar.scrolled {
   background: linear-gradient(to right, rgba(224, 243, 255, 1), rgb(255, 255, 255), rgba(224, 243, 255, 1));
 }
 
@@ -221,7 +225,7 @@ a {
   height: 50px;
   width: 150px;
   width: 170px;
-  margin-left: -100px;
+  margin-left: -15px !important;
   z-index: 10000;
   color: #ffffff !important;
 }
@@ -287,7 +291,7 @@ a {
     height: 40px;
     width: 150px;
     width: 130px;
-    margin-left: -100px;
+    margin-left: -15px !important;
     z-index: 10000;
     color: #ffffff !important;
   }
@@ -1299,7 +1303,8 @@ h1,
   width: 100% !important;
 }
 
-.company_servies {
+.onet {
+  display: none;
 }
 
 
