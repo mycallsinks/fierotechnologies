@@ -1,28 +1,46 @@
 :root {
-    /* Background Colors */
-  
-    --primary-bg-color: #021735;
-    /* --primary-bg-color: #0b2c57; */
-    --secondary-bg-color: #d7dfef;
-    /* Text Colors */
-  
-    --primary-text-color: #ffff;
-    --primary-two-color: #021735;
-    --paragraph-text-color: #ffffff80;
-    --secondary-text-color: #d7dfef;
-    --orther-text-color: #ff7900;
-    --linear: linear-gradient(130deg, #ff7900, #00abde);
+  /* Background Colors */
 
-  
-    /* Button Colors */
-  
-    /* fonts */
-    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI",
-      Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
-      "Segoe UI Emoji", "Segoe UI Symbol";
-    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
-      "Liberation Mono", "Courier New", monospace;
-  }
+  --primary-bg-color: #021735;
+  --primary-bg-color: #0b2c57;
+  /* Text Colors */
+
+  --primary-text-color: #ffff;
+  --primary-text-color: #000 !important;
+  --primary-text-color: #000000f1 !important;
+  --primary-text-color: rgba(0, 0, 0, 0.8) !important;
+  --paragraph-text-color: #ffffff80;
+  --paragraph-text-color: #000 !important;
+  --paragraph-text-color: rgba(0, 0, 0, 0.8) !important;
+  --secondary-text-color: #d7dfef;
+  --orther-text-color: #ff7900;
+  --linear: linear-gradient(130deg, #ff7900, #00abde);
+  --linear: linear-gradient(130deg, #fe5800, #0071c3);
+  --linear: #0071c3 !important;
+  --linear: #fe5800 !important;
+  --orange-buttons: #ff7900;
+  --blue-buttons: #00abde;
+  --font-family: "Poppins", sans-serif;
+
+  --primary-background: #0071c3;
+  --secondary-bakcground: #fe5800;
+  --light-orange: #ff7900;
+  --dark-orange: #fe5800;
+  --dark-blue: #0071c3;
+  --light-blue: #00abde;
+  /* Button Colors */
+
+  /* fonts */
+
+  /* redesign */
+
+  --primary-color: #0071c3;
+  --secondary-color: #fe5800;
+  --light-gray: #f7f7f7;
+  --dark-gray: #333333;
+  --white-color: #ffffff;
+  --paragraph-color: rgba(0, 0, 0, 0.9) !important;
+}
 
 .service-categories, .project-categories {
     margin: 0 auto;
@@ -39,6 +57,20 @@
     width: 100%;
 }
 
+.service-details .policy_img img{
+  height: 400px;
+  width: 550px;
+}
+
+
+@media screen and (max-width:1000px) {
+  .service-details .policy_img img{
+    height: auto;
+    width: 100%;
+  }
+  
+}
+
 
 @keyframes fadeIn {
     from {
@@ -50,6 +82,8 @@
 }
 
 /* styles for the card */
+.service-details .policy_holder .about_us_section{
+padding: 10px !important;}
 
 .service-details h2 , .project-details h2 {
     color: var(--orther-text-color);

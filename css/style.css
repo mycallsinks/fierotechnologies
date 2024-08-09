@@ -59,22 +59,12 @@
 
 /* default styles */
 body {
-  /* background-color: var(--primary-bg-color); */
-  /* background-color: var(--primary-bg-color); */
   font-family: "Lato", sans-serif;
   font-style: normal;
   font-family: "Kanit", sans-serif;
   font-style: normal;
 }
 
-/* 
-.home_section {
-  background: radial-gradient(circle, #021735 10%, #092a5b 50%, #0c326f 100%);
-} */
-body {
-  /* background: linear-gradient(to right, #e0f3ffbc, #ffffff, #e0f3ffab); */
-  /* background: #e0f3ff2c; */
-}
 
 .container_holder,
 .header_contents,
@@ -120,6 +110,8 @@ body {
   background-size: cover;
   position: relative;
   z-index: 0;
+
+
 }
 
 .home_section .container {
@@ -310,13 +302,12 @@ a {
 /* home section */
 
 .home_content_holder {
-  /* height: 100dvh; */
-  height: calc(100dvh) !important;
   display: flex;
   justify-content: center;
   align-items: center;
   padding-top: 70px !important;
   z-index: 100;
+  height: 100dvh !important;
 }
 
 .home_image {
@@ -486,6 +477,7 @@ a {
   /* height: 100dvh; */
   display: flex;
   align-items: center;
+  margin-top: 1000 !important;
 }
 
 .about_us .policy_img {
@@ -627,10 +619,7 @@ h1 {
     margin-bottom: 5px;
   }
 
-  .company_servies .service_holder .card {
-    background-color: #e0f3ffab !important;
-    padding: 20px 10px;
-  }
+
 
   .company_servies .col-md-9 {
     padding-left: 0px;
@@ -694,6 +683,13 @@ h1 {
   height: 50dvh !important;
 }
 
+@media screen and (min-width: 500px) and (max-width: 900px) {
+  .whole_facts_div {
+    height: 30dvh !important;
+  }
+}
+
+
 .whole_facts_div .card-img-top {
   height: 150px;
   object-fit: cover;
@@ -734,6 +730,9 @@ h1 {
 
 .facts .card-deck {
   margin-top: -120px !important;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around !important;
 }
 
 @media screen and (max-width: 350px) {
@@ -744,11 +743,12 @@ h1 {
 
 .facts .card-deck .card {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start !important;
   border-bottom: 3px solid var(--orther-text-color);
   border-bottom: 5px solid var(--dark-blue);
-  padding: 10px 50px;
+  padding: 20px 0px !important;
+  width: 260px;
+  margin-bottom: 20px;
 }
 
 .facts .card-deck .card .card-body {
@@ -838,6 +838,8 @@ h1 {
   margin: 0 !important;
 }
 
+
+
 .projects .card .card-body .sub_tittle {
   font-size: 1.4rem !important;
   margin: 0 !important;
@@ -845,7 +847,7 @@ h1 {
 
 .projects .card img {
   height: 270px;
-  width: 600px;
+  width: 700px !important;
   border-radius: 7px;
 }
 
@@ -866,9 +868,27 @@ h1 {
   top: 0;
   left: 0;
   background: rgba(9, 77, 98, 0.5);
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.2);
   z-index: 1;
   border-radius: 12px !important;
+}
+
+@media screen and (max-width:890px) {
+  .projects .card .card-body .project_description a,
+  .projects .card .card-body .project_category {
+color: #ffffff !important;
+  }
+
+
+.projects .card .proj_img::after {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.projects .card .card-body .sub_tittle {
+  font-size: 1.4rem !important;
+  margin: 0 !important;
+  color: #ffffff !important;
+}
 }
 
 .our_company_policy .container {
@@ -940,22 +960,28 @@ h1 {
   color: var(--primary-text-color);
   text-align: start;
 }
-
+.team_members {
+  display: flex;
+  justify-content: center;
+}
 .team_members .single-team-member {
   /* background-color: #1e2738; */
   background: #e0f3ff56 !important;
   border-radius: 12px;
   padding: 10px !important;
-  margin-bottom: 20px;
+  margin: 0 auto !important;
+  margin-bottom: 20px !important;
   border: 1px solid #00abde !important;
+width: 300px !important;
 
 }
 .team_members .single-team-member .team-member-thumb {
   height: 170px;
   border-radius: 12px;
-
   background: var(--light-blue);
   position: relative;
+  margin-bottom: -10px !important;
+
 }
 .team_members .single-team-member .team-member-thumb .team-social-icon a {
   display: inline-block;
@@ -1031,6 +1057,7 @@ h1 {
   padding: 30px 5px;
   background: rgba(224, 243, 255, 1);
 }
+
 
 @media screen and (max-width: 767px) {
   .footer {
@@ -1296,18 +1323,23 @@ h1,
   margin: 0 !important;
 }
 
+
+
 .our_company_policy .policy_holder {
   display: flex;
+  /* gap: 2px !important; */
 }
 
 .our_company_policy .policy_img img {
   padding: 0 !important;
   margin: 0 !important;
   align-self: center;
+
 }
 
 .our_company_policy .policy h1 {
-  width: 100% !important;
+  width: 98% !important;
+  text-align: center;
 }
 
 .onet {
@@ -1352,8 +1384,8 @@ flex-direction: row !important;
   height: 100%;
   width: 300px;
   align-self: center;
-  padding: 20px 0 !important;
-  margin: 20px 0;
+  padding: 20px 5px !important;
+  margin: 20px auto;
   border-radius: 12px;
   display: flex;
   gap: 10px;
@@ -1391,4 +1423,25 @@ flex-direction: row !important;
   color: var(--dark-orange) !important;
   transition: all .5s ease-in-out;
 
+}
+
+
+.our_company_policy, .fiero_projects{
+  padding: 0 5px !important;
+}
+
+
+.about_us {
+  /* height: 100dvh; */
+  display: flex;
+  align-items: center;
+  margin-top: 20px !important;
+}
+
+.footer .row {
+  display: flex;
+  justify-content: space-between !important;
+  margin: 0 auto;
+  padding: 0 !important;
+  /* gap: 10px; */
 }
