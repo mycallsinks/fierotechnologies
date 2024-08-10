@@ -79,7 +79,7 @@ body {
 .service-details,
 .contact_us,
 .project-categories {
-  max-width: 1200px;
+  /* max-width: 1200px; */
   max-width: 1250px;
   margin: 0 auto;
   padding: 0 0px !important;
@@ -88,9 +88,6 @@ body {
   min-width: 300px !important;
 }
 
-/* .navbar {
-  background: linear-gradient(to right, rgba(224, 243, 255, 1), rgb(255, 255, 255), rgba(224, 243, 255, 1));
-} */
 
 .navbar.scrolled {
   background: linear-gradient(
@@ -457,9 +454,6 @@ a {
 }
 
 @media screen and (min-width: 575px) and (max-width: 1000px) {
-  .about_us .about_sub_title {
-    /* text-align: left !important; */
-  }
   .about_us .removeattablet {
     display: none !important;
   }
@@ -482,7 +476,6 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 100px !important;
 }
 
 .about_us .policy_img {
@@ -499,11 +492,6 @@ a {
   margin: 0 auto !important;
 }
 
-@media screen and (min-width: 500px) and (max-width: 850px) {
-  .about_us .policy_img img {
-    /* display: none; */
-  }
-}
 
 .about_us_section {
   display: flex;
@@ -804,9 +792,7 @@ h1 {
   color: var(--dark-orange);
 }
 
-.fiero_projects {
-  margin-top: 70px;
-}
+
 .projects {
   display: flex;
   align-items: center;
@@ -1137,7 +1123,7 @@ h1 {
   color: var(--orther-text-color);
 }
 .footer p {
-  font-size: 0.9rem !important;
+  font-size: 0.95rem !important;
   color: var(--primary-text-color);
   text-align: start;
   /* letter-spacing: 0.5px; */
@@ -1164,8 +1150,6 @@ h1 {
   border-radius: 12px;
 }
 
-.company_servies .card {
-}
 
 .our_company_policy .community_text {
   font-weight: 600;
@@ -1175,14 +1159,12 @@ h1 {
 
 h1.home_title {
   font-size: 3.6rem !important;
-  font-weight: 800 !important;
   font-weight: bolder !important;
 }
 
 h1 {
   font-size: 2rem !important;
   font-weight: 700;
-  font-style: normal;
   color: var(--primary-text-color);
   padding: 0 !important;
 }
@@ -1206,11 +1188,6 @@ h1,
   font-weight: bolder !important;
 }
 
-/* heights to use on buttons
- */
-
-/* height: 40px;
- width: 120px; */
 
 .nav_btn,
 .act_btn {
@@ -1247,8 +1224,6 @@ h1,
   font-family: "Poppins", sans-serif !important;
   font-family: var(--font-family) !important;
 }
-/* font sizes for headers */
-/* font sizes for  */
 
 .action_btns,
 .act_btn,
@@ -1404,6 +1379,10 @@ icons in services
 
 */
 
+.company_servies {
+  padding: 10px 0 !important;
+}
+
 .company_servies .service_holder {
   display: flex;
   justify-content: center !important;
@@ -1508,3 +1487,19 @@ icons in services
   }
 }
 
+/* section */
+
+section{
+  margin: 60px auto !important;
+  padding: 0 !important;
+}
+
+section.about_us {
+  margin-top: -50px !important;
+  padding-top: 0 !important;
+}
+
+.about_us .container {
+  padding: 0 !important;
+  margin: 0 !important;
+}

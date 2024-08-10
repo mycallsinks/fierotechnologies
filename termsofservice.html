@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terms and Conditions</title>
+    <meta name="description" content="" />
+
+    <title>Services</title>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-CJ1BQ981YT"></script>
     <script>
@@ -58,6 +60,63 @@
 </head>
 
 
+<style>
+    .about_us.termsandconditions {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+    }
+
+    .about_us .terms-policy,
+    .about_us .privacy-policy {
+        flex: 1 1 50%;
+        /* Each section takes half the screen on larger screens */
+        padding: 20px;
+        box-sizing: border-box;
+        box-shadow: none !important;
+
+    }
+
+    .about_us .terms-policy h1,
+    .about_us .privacy-policy h1,
+    .about_us .terms-policy h2,
+    .about_us .privacy-policy h2 {
+        font-size: 1.2rem !important;
+        margin-bottom: 15px;
+    }
+
+    .about_us .terms-policy p,
+    .about_us .privacy-policy p {
+        font-size: 0.9rem !important;
+        line-height: 1.5;
+        margin-bottom: 10px;
+    }
+
+    .about_us .terms-policy ul,
+    .about_us .privacy-policy ul {
+        font-size: 0.9rem !important;
+        line-height: 1.5;
+        margin-bottom: 10px;
+        padding-left: 20px;
+    }
+
+    .about_us .terms-policy ul li,
+    .about_us .privacy-policy ul li {
+        margin-bottom: 8px;
+    }
+
+    @media (max-width: 768px) {
+
+        .about_us .terms-policy,
+        .about_us .privacy-policy {
+            flex: 1 1 100%;
+            /* Full screen on smaller screens */
+        }
+    }
+</style>
+
+
 
 <body>
 
@@ -71,7 +130,7 @@
 
     <div class="nav_holder ">
         <!-- header here -->
-       
+
         <nav class="navbar navbar-expand-md p-0">
             <div class="container-fluid header_contents pb-3 pt-3">
                 <a class="navbar-brand text-light" href="./index.html">
@@ -87,7 +146,7 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto m-0">
-                        <li class="nav-item active_link">
+                        <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="./index.html">Home</a>
                         </li>
                         <li class="nav-item">
@@ -209,80 +268,87 @@
     </section>
 
 
-
-    <!-- our recent projects -->
-    <div class="awesome_design_two">
-
-    </div>
-
-
-
     <footer class="footer">
         <div class="footer_holder">
-            <div class="footer-content-area ">
+            <div class="footer-content-area">
                 <div class="container">
-                    <div class="row ">
+                    <div class="row">
                         <div class="col-12 col-lg-4 col-md-6 mb-4">
-                            <div class="footer-copywrite-info ">
+                            <div class="footer-copywrite-info">
                                 <!-- Copywrite -->
                                 <div class="copywrite_text fadeInUp" data-wow-delay="0.2s">
                                     <a class="navbar-brand text-light" href="#">
-                                        <img class="fiero_logo p-0 m-0" src="./logo/fiero.png"
+                                        <img class="fiero_logo p-0 m-0" src="./images/logoimages/Colored For Light Backgrounds.png"
                                             alt="Fiero Technologies Logo">
                                     </a>
                                 </div>
                                 <div class="copy_text p-0 m-0">
                                     <p class="m-0">Fiero Technologies is dedicated to providing top-notch solutions in
                                         web development, app creation, and more. Our mission is to address your software
-                                        and device needs with expertise and innovation. Contact us to learn how we can
-                                        help you achieve your goals.</p>
+                                        and device needs with expertise and innovation.</p>
                                 </div>
                                 <!-- Social Icon -->
                                 <div class="footer-social-info fadeInUp" data-wow-delay="0.4s">
                                     <a href="https://www.facebook.com/fierotechnologies?mibextid=LQQJ4d"
                                         target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                    <a href="mailto:fierotechnologies@gmail.com">
-                                        <i class="fa fa-envelope" aria-hidden="true"></i>
-                                    </a>
-
-                                    <a href="mailto:fierotechnologies@gmail.com">
-                                        <i class="fa fa-google-plus" aria-hidden="true"></i>
-                                    </a>
-
+                                    <a href="mailto:fierotechnologies@gmail.com"><i class="fa fa-envelope"
+                                            aria-hidden="true"></i></a>
+                                    <a href="mailto:fierotechnologies@gmail.com"><i class="fa fa-google-plus"
+                                            aria-hidden="true"></i></a>
                                 </div>
                             </div>
-
                         </div>
 
-                        <div class="col-12 col-lg-3 col-md-6 mb-4">
+
+                        <div class="col-12 col-lg-2 col-md-5 mb-4">
                             <div class="contact_info_area d-sm-flex justify-content-between">
-                                <!-- Content Info -->
-                                <div class="contact_info mt-x text-center fadeInUp" data-wow-delay="0.3s">
-                                    <h5>PRIVACY &amp; TOS</h5>
-                                    <a href="#">
-                                        <p>Web Hosting</p>
+                                <div class="contact_info mt-s text-center fadeInUp" data-wow-delay="0.2s">
+                                    <h5>QUICK LINKS</h5>
+                                    <a href="./index.html">
+                                        <p>Home</p>
                                     </a>
-                                    <a href="./termsofservice.html">
-                                        <p>Technology Privacy</p>
+                                    <a href="./aboutus.html">
+                                        <p>About Us</p>
                                     </a>
-                                    <a href="./termsofservice.html">
-                                        <p>Terms of service</p>
+                                    <a href="./blog.html">
+                                        <p>Our Tem</p>
                                     </a>
+                                    <a href="./faq.html">
+                                        <p>FAQ</p>
+                                    </a>
+
                                 </div>
                             </div>
                         </div>
+                        
 
-                        <div class="col-12 col-lg-2 col-md-6  mb-4">
+                        <div class="col-12 col-lg-2 col-md-5 mb-4">
+                            <div class="contact_info mt-x text-center fadeInUp" data-wow-delay="0.3s">
+                                <h5>PRIVACY &amp; ToS</h5>
+                                <a href="./privacy-policy.html">
+                                    <p>Privacy Policy</p>
+                                </a>
+                                <a href="./termsofservice.html">
+                                    <p>Terms of Service</p>
+                                </a>
+                                <a href="./termsofservice.html">
+                                    <p>Refund Policy</p>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-12 col-lg-2 col-md-5 mb-4">
                             <!-- Content Info -->
                             <div class="contact_info_area d-sm-flex justify-content-between">
                                 <div class="contact_info mt-s text-center fadeInUp" data-wow-delay="0.2s">
                                     <h5>NAVIGATE</h5>
                                     <a href="./services.html">
-                                        <p>Submit an Idea</p>
+                                        <p>Our Services</p>
                                     </a>
-
-                                    <a href="tel:+260974286888">
-                                        <p>Direct Call</p>
+                                    <a href="./submit-idea.html">
+                                        <p>Submit an Idea</p>
                                     </a>
                                     <a href="./contactus.html">
                                         <p>Locate Us</p>
@@ -294,27 +360,25 @@
                             </div>
                         </div>
 
-
-                        <div class="col-12 col-lg-3 col-md-6  mb-4">
+                        <div class="col-12 col-lg-2 col-md-5 mb-4">
                             <div class="contact_info_area d-sm-flex justify-content-between">
                                 <!-- Content Info -->
                                 <div class="contact_info mt-s text-center fadeInUp" data-wow-delay="0.4s">
                                     <h5>CONTACT US</h5>
-                                    <p>fierotechnologies@gmail.com</p>
-                                    <p>Zambia 10101. Lusaka</p>
-                                    <p>+260 97428 6888</p>
-
+                                    <p><a href="mailto:fierotechnologies@gmail.com">fierotechnologies@gmail.com</a></p>
+                                    <p>Zambia 10101, Lusaka</p>
+                                    <p><a href="tel:+260974286888">+260 97428 6888</a></p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
             </div>
 
-            <p class="text-center">Copyright © 2024. All Rights Reserved To Fiero Technologies </p>
+            <p class="text-center">Copyright © 2024. All Rights Reserved To Fiero Technologies</p>
         </div>
     </footer>
+
 
     <!-- boostrap js cdn link -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

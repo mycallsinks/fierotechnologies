@@ -369,3 +369,9 @@ select:focus {
   border: 0 !important;
   padding: 5px 10px;
 }
+
+
+section.service-details {
+  margin-top: 35px  !important;
+  padding: 0 !important;
+}
