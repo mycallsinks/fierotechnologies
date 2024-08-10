@@ -53,6 +53,7 @@
         console.log(websitePurpose + currentWebsite + projectDescription);
 
         submitButton.textContent = "Message sent. We will get back to you shortly.";
+        form.reset();
 
         setTimeout(() => {
           submitButton.textContent = "Send Again";

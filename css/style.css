@@ -976,14 +976,6 @@ h1 {
   text-align: start;
 }
 
-/* for team members code
-
-col-12 col-sm-6 col-md-2 col-lg-3
-col-12 col-sm-6 col-md-2 col-lg-3
-col-12 col-sm-6 col-md-2 col-lg-3
-col-12 col-sm-6 col-md-2 col-lg-3
-
-*/
 
 .team_members {
   display: flex;
@@ -1410,8 +1402,7 @@ h1,
   display: none;
 }
 
-.fiero_projects {
-}
+
 
 /* 
 icons in services
@@ -1506,12 +1497,17 @@ icons in services
   width: 100% !important;
 }
 
+
+
 .questions .row {
   padding: 0 10px !important;
 }
 
-.questions .acco_img {
-  height: 350px;
+.questions .acco_img  {
+  margin: 0 auto !important;
+  padding:  0 !important;
+  align-self: center;
+
 }
 
 @media screen and (max-width: 767px) {

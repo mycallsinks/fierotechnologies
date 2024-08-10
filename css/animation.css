@@ -41,13 +41,13 @@ nav {
 }
 
 .navbar-nav .active_link {
-  border-bottom: 1px solid var(--orther-text-color);
+  border-bottom: 2px solid var(--orther-text-color);
   transition: all 0.5s ease-out;
 }
 
 @media screen and (max-width:767px) {
   .navbar-nav .active_link {
-    border-bottom: 1px solid var(--orther-text-color);
+    border-bottom: 2px solid var(--orther-text-color);
     width: fit-content;
     transition: all 0.5s ease-out;
   }
