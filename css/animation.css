@@ -10,12 +10,14 @@ nav {
 @media screen and (max-width: 767px) {
   nav {
     /* background-color: #021735f0; */
-  } 
+  }
 }
 
-:root{
+:root {
   --linear: linear-gradient(130deg, #ff7900, #00abde);
   --orther-text-color: #ff7900;
+  --dark-orange: #fe5800;
+  --dark-blue: #0071c3;
 }
 /* hovering  */
 
@@ -45,7 +47,7 @@ nav {
   transition: all 0.5s ease-out;
 }
 
-@media screen and (max-width:767px) {
+@media screen and (max-width: 767px) {
   .navbar-nav .active_link {
     border-bottom: 2px solid var(--orther-text-color);
     width: fit-content;
@@ -54,7 +56,7 @@ nav {
 }
 
 .questions .accordion-item button {
-  background: var(--dark-blue) ;
+  background: var(--dark-blue);
   background-size: 200% 100%;
   background-position: 0 0 !important;
   transition: background-position 1s ease-in-out !important;
@@ -151,7 +153,6 @@ nav {
   }
 }
 
-
 .about_us img {
   background: transparent;
   width: auto;
@@ -169,7 +170,6 @@ nav {
   }
 }
 
-
 @media all and (max-width: 767px) {
   .home_image img,
   .about_us img {
@@ -181,7 +181,7 @@ nav {
   @keyframes floatImg {
     0%,
     100% {
-      transform: translateY(0) ;
+      transform: translateY(0);
     }
 
     50% {
@@ -189,7 +189,6 @@ nav {
     }
   }
 }
-
 
 .count {
   transition: opacity 0.5s ease-in-out;
@@ -199,22 +198,20 @@ nav {
 
 #loader {
   position: fixed;
-  z-index: 999;
+  bottom: 0;
+  z-index: 100000;
   width: 100%;
   height: 100%;
-  background: var(--primary-background);
-  background: rgba(224, 243, 255, 1);
   background: rgb(235, 238, 240);
-
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  overflow-y: hidden !important;
-  z-index: 100000;
+  overflow: hidden !important;
   gap: 0;
   margin: 0 !important;
 }
+
 
 
 .spinnerL {
@@ -236,134 +233,95 @@ nav {
   }
 }
 
-
-
 /* animation for projects */
 
 /* Keyframes for different entrance animations */
 @keyframes enterFromTopLeft {
   from {
-      transform: translate(-100%, -100%);
-      opacity: 0;
+    transform: translate(-100%, -100%);
+    opacity: 0;
   }
   to {
-      transform: translate(0, 0);
-      opacity: 1;
+    transform: translate(0, 0);
+    opacity: 1;
   }
 }
 
 @keyframes enterFromTopRight {
   from {
-      transform: translate(100%, -100%);
-      opacity: 0;
+    transform: translate(100%, -100%);
+    opacity: 0;
   }
   to {
-      transform: translate(0, 0);
-      opacity: 1;
+    transform: translate(0, 0);
+    opacity: 1;
   }
 }
 
 @keyframes enterFromBottomLeft {
   from {
-      transform: translate(-100%, 100%);
-      opacity: 0;
+    transform: translate(-100%, 100%);
+    opacity: 0;
   }
   to {
-      transform: translate(0, 0);
-      opacity: 1;
+    transform: translate(0, 0);
+    opacity: 1;
   }
 }
 
 @keyframes enterFromBottomRight {
   from {
-      transform: translate(100%, 100%);
-      opacity: 0;
+    transform: translate(100%, 100%);
+    opacity: 0;
   }
   to {
-      transform: translate(0, 0);
-      opacity: 1;
+    transform: translate(0, 0);
+    opacity: 1;
   }
 }
 
 @keyframes enterFromTop {
   from {
-      transform: translateY(-100%);
-      opacity: 0;
+    transform: translateY(-100%);
+    opacity: 0;
   }
   to {
-      transform: translateY(0);
-      opacity: 1;
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 
 @keyframes enterFromBottom {
   from {
-      transform: translateY(100%);
-      opacity: 0;
+    transform: translateY(100%);
+    opacity: 0;
   }
   to {
-      transform: translateY(0);
-      opacity: 1;
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 
 @keyframes enterFromLeft {
   from {
-      transform: translateX(-100%);
-      opacity: 0;
+    transform: translateX(-100%);
+    opacity: 0;
   }
   to {
-      transform: translateX(0);
-      opacity: 1;
+    transform: translateX(0);
+    opacity: 1;
   }
 }
 
 @keyframes enterFromRight {
   from {
-      transform: translateX(100%);
-      opacity: 0;
+    transform: translateX(100%);
+    opacity: 0;
   }
   to {
-      transform: translateX(0);
-      opacity: 1;
+    transform: translateX(0);
+    opacity: 1;
   }
 }
 
-/* Apply animation classes */
-.animate-top-left {
-  animation: enterFromTopLeft 0.8s forwards;
-}
-
-.animate-top-right {
-  animation: enterFromTopRight 0.8s forwards;
-}
-
-.animate-bottom-left {
-  animation: enterFromBottomLeft 0.8s forwards;
-}
-
-.animate-bottom-right {
-  animation: enterFromBottomRight 0.8s forwards;
-}
-
-.animate-top {
-  animation: enterFromTop 0.8s forwards;
-}
-
-.animate-bottom {
-  animation: enterFromBottom 0.8s forwards;
-}
-
-.animate-left {
-  animation: enterFromLeft 0.8s forwards;
-}
-
-.animate-right {
-  animation: enterFromRight 0.8s forwards;
-}
-
-/* Hide all project details sections initially */
-.project-details {
-  display: none;
-}
 

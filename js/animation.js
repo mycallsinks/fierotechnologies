@@ -146,6 +146,3 @@ window.addEventListener('scroll', function() {
   
 
 //   accordion opening alwasy
-
-
-
