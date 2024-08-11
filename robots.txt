@@ -1,0 +1,6 @@
+# Allow all web crawlers full access to the site
+User-agent: *
+Disallow:
+
+# Specify the location of your sitemap
+Sitemap: https://www.fierotechnologies.com/sitemap.xml
