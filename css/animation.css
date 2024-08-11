@@ -212,6 +212,8 @@ nav {
   height: 50px;
   border: 6px solid #00abde;
   border-bottom: 6px solid var(--dark-orange);
+  border-top: 6px solid var(--dark-orange);
+
   border-radius: 50%;
   animation: spin 1s linear infinite;
 }
@@ -321,6 +323,7 @@ nav {
 /* Styling for the previous and next button */
 .carousel-control-prev-icon {
   background-color: var(--dark-orange);
+  opacity: .3;
   border-radius: 50%;
   width: 40px;
   height: 40px;
@@ -328,6 +331,7 @@ nav {
 
 .carousel-control-next-icon {
   background-color: var(--dark-blue);
+  opacity: .3;
   border-radius: 50%;
   width: 40px;
   height: 40px;

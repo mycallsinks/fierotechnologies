@@ -129,7 +129,7 @@
 
 ::-webkit-input-placeholder {
   font-size: 0.8rem;
-  color: var(--dark-orange) !important;
+  color: #00000063 !important;
 }
 :-ms-input-placeholder {
   font-size: 0.8rem;
