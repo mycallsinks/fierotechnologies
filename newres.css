@@ -1,0 +1,23 @@
+@media only screen and (max-width: 767px){
+    .sbs-testimonial-section .section-title {
+        padding-top: 40px;
+    }
+
+    .sbs-testimonial-section {
+        padding-top: 10px;
+    }
+
+    .testimonial-section .section-title {
+        padding-left: 120px;
+    }
+
+}
+
+@media only screen and (max-width: 1550px){
+    .testimonial-section .section-title p br{
+        display: none;
+    }
+    .sbs-testimonial-section:before {
+        top: -64%;
+    }
+}

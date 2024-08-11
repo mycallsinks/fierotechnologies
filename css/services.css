@@ -1,45 +1,11 @@
 :root {
-  /* Background Colors */
-
-  --primary-bg-color: #021735;
-  --primary-bg-color: #0b2c57;
-  /* Text Colors */
-
-  --primary-text-color: #ffff;
-  --primary-text-color: #000 !important;
-  --primary-text-color: #000000f1 !important;
-  --primary-text-color: rgba(0, 0, 0, 0.8) !important;
-  --paragraph-text-color: #ffffff80;
-  --paragraph-text-color: #000 !important;
   --paragraph-text-color: rgba(0, 0, 0, 0.8) !important;
-  --secondary-text-color: #d7dfef;
-  --orther-text-color: #ff7900;
-  --linear: linear-gradient(130deg, #ff7900, #00abde);
-  --linear: linear-gradient(130deg, #fe5800, #0071c3);
-  --linear: #0071c3 !important;
-  --linear: #fe5800 !important;
-  --orange-buttons: #ff7900;
-  --blue-buttons: #00abde;
-  --font-family: "Poppins", sans-serif;
-
-  --primary-background: #0071c3;
-  --secondary-bakcground: #fe5800;
-  --light-orange: #ff7900;
   --dark-orange: #fe5800;
   --dark-blue: #0071c3;
   --light-blue: #00abde;
-  /* Button Colors */
-
-  /* fonts */
-
-  /* redesign */
-
-  --primary-color: #0071c3;
-  --secondary-color: #fe5800;
   --light-gray: #f7f7f7;
   --dark-gray: #333333;
   --white-color: #ffffff;
-  --paragraph-color: rgba(0, 0, 0, 0.9) !important;
 }
 
 .service-categories,
@@ -60,8 +26,9 @@
 }
 
 .service-details .policy_img img {
-  height: 400px;
-  width: 550px;
+  /* height: 400px !important;
+  width: 550px !; */
+  padding: 5px !important;
 }
 
 @media screen and (max-width: 1000px) {
@@ -87,12 +54,12 @@
 
 .service-details h2,
 .project-details h2 {
-  color: var(--orther-text-color);
+  color: var(--dark-orange);
 }
 
 .service-details p,
 .project-details p {
-  color: var(--primary-text-color);
+  color: var(--paragraph-text-color);
 }
 
 .service-details input,
@@ -106,7 +73,7 @@
 
 .service-details label,
 .project-details label {
-  color: var(--primary-text-color);
+  color: var(--paragraph-text-color);
   text-align: left;
   width: 100%;
   margin-bottom: 5px;
@@ -123,7 +90,7 @@
 
 .list-group-horizontal li {
   border-radius: 0px !important ;
-  /* background: var(--linear); */
+  /* background: var(--dark-orange); */
   background: #80451195;
   background: var(--dark-blue);
   border: 1px solid #0071c3;
@@ -145,18 +112,18 @@
 /* Styles for selected item */
 .list-group-item.selected {
   border: 1px solid var(--dark-orange);
-  background: var(--linear);
+  background: var(--dark-orange);
   color: white; /* Text color for better contrast */
 }
 
 .list-group-item:hover,
 .list-group-item-for-projects:hover {
-  border: 1px solid var(--orther-text-color);
+  border: 1px solid var(--dark-orange);
 }
 
 .list-group-item-for-projects.selected {
   border: 1px solid var(--dark-orange);
-  background: var(--linear);
+  background: var(--dark-orange);
   color: white; /* Text color for better contrast */
 }
 
@@ -182,7 +149,7 @@
 }
 
 input:focus {
-  border:2px solid  var(--dark-orange) !important;
+  border: 2px solid var(--dark-orange) !important;
   outline-color: var(--dark-orange) !important;
   box-shadow: var(--dark-orange) !important;
 }
@@ -190,11 +157,10 @@ input:focus {
 input:focus,
 textarea:focus,
 select:focus {
-    outline: none;
-    border:0px solid  var(--dark-orange) !important;
-    box-shadow: 0 0 3px 0.2rem var(--dark-orange) !important; /* Example: red color */
+  outline: none;
+  border: 0px solid var(--dark-orange) !important;
+  box-shadow: 0 0 3px 0.2rem var(--dark-orange) !important; /* Example: red color */
 }
-
 
 /* input:focus,
 textarea:focus,
@@ -274,13 +240,12 @@ select:focus {
   top: -2px;
   width: 100%;
   text-align: center;
-  color: var(--primary-text-color);
-  color: var(--orther-text-color);
+  color: var(--dark-orange);
 }
 
 .modal-header button {
-  border: 3px solid var(--primary-text-color);
-  background: var(--linear);
+  border: 3px solid var(--paragraph-text-color);
+  background: var(--dark-orange);
   z-index: 0;
   display: flex;
 }
@@ -298,7 +263,7 @@ select:focus {
 
 .text-danger {
   color: #dc3545;
-  font-size: 1rem;
+  font-size: .95rem;
   font-weight: bold;
   border: 1px solid #dc3545;
   border-radius: 4px;
@@ -309,7 +274,6 @@ select:focus {
 }
 
 .getyoursdonebtn {
-  background: var(--linear);
   background: var(--dark-orange);
 }
 
@@ -349,7 +313,7 @@ select:focus {
 .terms-policy p,
 .privacy-policy p {
   margin-bottom: 15px;
-  font-size: 1rem;
+  font-size: .95rem;
   line-height: 1.6;
   color: #6c757d;
 }
@@ -370,8 +334,7 @@ select:focus {
   padding: 5px 10px;
 }
 
-
 section.service-details {
-  margin-top: 35px  !important;
+  margin-top: 35px !important;
   padding: 0 !important;
 }

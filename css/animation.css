@@ -1,21 +1,14 @@
 nav {
-  position: fixed !important; /* Initially relative */
+  position: fixed !important;
   z-index: 1000;
+  top: 0 !important;
   width: 100%;
   margin: 0 auto;
   transition: all 0.2s ease-in-out;
-  /* background-color: #021735e5; */
 }
 
-@media screen and (max-width: 767px) {
-  nav {
-    /* background-color: #021735f0; */
-  }
-}
 
 :root {
-  --linear: linear-gradient(130deg, #ff7900, #00abde);
-  --orther-text-color: #ff7900;
   --dark-orange: #fe5800;
   --dark-blue: #0071c3;
 }
@@ -23,7 +16,7 @@ nav {
 
 .act_btn,
 .nav_btn {
-  background: var(--linear);
+  background: var(--dark-orange);
   background-size: 200% 100%;
   transition: all 1s ease-in-out;
   overflow: hidden;
@@ -43,13 +36,13 @@ nav {
 }
 
 .navbar-nav .active_link {
-  border-bottom: 2px solid var(--orther-text-color);
+  border-bottom: 2px solid var(--dark-orange);
   transition: all 0.5s ease-out;
 }
 
 @media screen and (max-width: 767px) {
   .navbar-nav .active_link {
-    border-bottom: 2px solid var(--orther-text-color);
+    border-bottom: 2px solid var(--dark-orange);
     width: fit-content;
     transition: all 0.5s ease-out;
   }
@@ -77,7 +70,7 @@ nav {
   margin-top: 10px;
 }
 .single-team-member:hover {
-  border: 1px solid var(--orther-text-color) !important;
+  border: 1px solid var(--dark-orange) !important;
   transition: all 0.5s ease;
 }
 
@@ -86,7 +79,7 @@ nav {
   transition: all 0.5s ease;
 }
 .single-team-member:hover .team-info .w-text {
-  color: var(--orther-text-color) !important;
+  color: var(--dark-orange) !important;
   transition: all 0.5s ease;
 }
 
@@ -218,8 +211,7 @@ nav {
   width: 50px;
   height: 50px;
   border: 6px solid #00abde;
-  border-top: 6px solid var(--orther-text-color);
-  border-bottom: 6px solid var(--orther-text-color);
+  border-bottom: 6px solid var(--dark-orange);
   border-radius: 50%;
   animation: spin 1s linear infinite;
 }
@@ -325,3 +317,23 @@ nav {
 }
 
 
+
+/* Styling for the previous and next button */
+.carousel-control-prev-icon {
+  background-color: var(--dark-orange);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.carousel-control-next-icon {
+  background-color: var(--dark-blue);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 60px;
+}

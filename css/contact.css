@@ -16,38 +16,10 @@ body {
 }
 
 :root {
-    --main-color: #033a80;
-    --bg-color: #fff;
-    --text-color: #0f0c27;
-    --orther-color: #4390f5;
-    --hover: hsl(260, 100%, 51%);
-    --big-font: 3.2rem;
-    --medium-font: 1.8rem;
-    --p-font: 0.97rem;
-    --top-bg: #f8f8f8;
-    --white: #fff;
-    --sub-font: 1.2rem;
-    --sub-sub-font: 0.9rem;
-    --logo-font: 1rem;
-    --orther-text-color:#ff7900;
-    --black: rgb(0, 0, 0);
-
-    --primary-text-color: #ffff;
-    --linear: linear-gradient(130deg, #ff7900, #00abde);
-
-
+    --primary-text-color: rgba(0, 0, 0, 0.8) !important;
+    --p-font: .95rem;
+    --dark-orange: #fe5800;
 }
-
-/* h1,
-h2,
-h3,
-h4,
-h5 {
-    margin-bottom: 0.5rem;
-    font-family: inherit;
-    font-weight: 600;
-    line-height: 1.2;
-} */
 
 /* contact section starts jere */
 .contact {
@@ -119,7 +91,7 @@ h5 {
 
 .contact_wrapper .fa-solid,
 .contact_wrapper .fa-regular {
-    color: var(--orther-text-color);
+    color: var(--dark-orange);
     display: inline-block;
     font-size: 1.3rem !important;
     align-self: center;
@@ -128,7 +100,7 @@ h5 {
 .contact_wrapper .number div .value {
     margin: 10px 0;
     margin-left: 20px;
-    font-size: 1rem;
+    font-size: .95rem;
 
 }
 
@@ -177,12 +149,12 @@ h5 {
     align-items: center;
     width: fit-content;
     font-weight: 550;
-    background: var(--linear);
+    background: var(--dark-orange);
     padding: 10px 15px;
     height: 40px;
     align-self: center;
     border-width: 0;
-    font-size: .9rem !important;
+    font-size: .95rem !important;
 }
 
 .messages .form button:hover {
@@ -191,13 +163,13 @@ h5 {
 
 input:focus,
 textarea:focus {
-    outline: 1px solid var(--orther-text-color);
+    outline: 1px solid var(--dark-orange);
 }
 
 .tittle h1 p {
     font-family: "Prompt", sans-serif;
     font-family: "Gloria Hallelujah", cursive;
-    font-size: 1rem;
+    font-size: .95rem;
 
 }
 
@@ -212,5 +184,5 @@ textarea {
 
 .name i {
     display: inline-block;
-    font-size: .9rem !important
+    font-size: .95rem !important
 }
