@@ -1407,3 +1407,7 @@ section.aboutuspage {
   margin-top: -50px !important;
 }
 
+
+.navbar-toggler .fa-bars {
+  color: #ffffff !important;
+}
