@@ -184,5 +184,7 @@ textarea {
 
 .name i {
     display: inline-block;
-    font-size: .95rem !important
+    font-size: .95rem !important;
+    margin-right:.4rem;
+    align-self: center;
 }
