@@ -62,16 +62,6 @@ body {
 
  
 }
-.navbar {
-  background: linear-gradient(
-    to right,
-    rgb(255, 255, 255),
-    rgba(224, 243, 255, 1),
-    rgb(255, 255, 255),
-    rgba(224, 243, 255, 1)
-  );
-  height: 60px;
-}
 
 .home_section {
   background: url(../images/homeimage/home7.jpg);
@@ -1393,11 +1383,15 @@ icons in services
 
 /* section */
 
+
 section{
   margin: 60px auto !important;
   padding: 0 !important;
 }
 
+.home_section {
+  margin-top: 0 !important;
+}
 section.about_us {
   margin-top: -50px !important;
   padding-top: 0 !important;
