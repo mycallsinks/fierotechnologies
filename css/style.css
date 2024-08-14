@@ -1411,3 +1411,81 @@ section.aboutuspage {
 .navbar-toggler .fa-bars {
   color: #ffffff !important;
 }
+
+
+h1.home_title {
+  font-size: 3rem !important;
+}
+
+
+
+/* Large Laptops and Desktops */
+@media (max-width: 1250px) {
+  h1.home_title {
+    font-size: 3rem !important;
+  }
+}
+
+/* Medium Laptops */
+@media (max-width: 1024px) and (min-width: 769px) {
+  h1.home_title {
+    font-size: 2.6rem !important;
+  }
+
+  .action_btns button{
+    padding: 11px !important;
+  } 
+}
+
+/* Small Laptops */
+@media (max-width: 768px) and (min-width: 600px) {
+  h1.home_title {
+    font-size: 2.2rem !important;
+  }
+  .action_btns button{
+    padding: 11px !important;
+  } 
+}
+
+/* Large Tablets */
+@media (max-width: 599px) and (min-width: 480px) {
+  h1.home_title {
+    font-size: 1.9rem !important;
+  }
+
+  .action_btns button{
+    padding: 10px !important;
+  } 
+}
+
+/* Medium Tablets */
+@media (max-width: 479px) and (min-width: 375px) {
+  h1.home_title {
+    font-size: 1.75rem !important;
+  }
+
+  .action_btns button{
+    padding: 10px !important;
+  } 
+}
+
+/* Small Tablets and Large Mobile Phones */
+@media (max-width: 374px) and (min-width: 320px) {
+  h1.home_title {
+    font-size: 1.6rem !important;
+  }
+
+  .action_btns button{
+    padding: 9px !important;
+  } 
+}
+
+/* Small Mobile Phones */
+@media (max-width: 319px) {
+  h1.home_title {
+    font-size: 1rem !important;
+  }
+  .action_btns button{
+    padding: 6px !important;
+  } 
+}
