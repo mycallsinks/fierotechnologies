@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const updateCount = () => {
             const target = +counter.getAttribute('data-count');
             const count = +counter.innerText.replace(/[^0-9]/g, ''); // Remove non-numeric characters
-            const speed = 4000; // Adjust speed (milliseconds)
+            const speed = 2000; // Adjust speed (milliseconds)
 
             if (count < target) {
                 const increment = target / speed * 300;
