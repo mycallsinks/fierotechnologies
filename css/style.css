@@ -649,16 +649,19 @@ h1 {
 .facts .card-deck i {
   display: block;
   font-size: 2.5rem;
-  width: 65px;
-  height: 65px;
+  /* width: 65px; */
+  /* height: 65px; */
   text-align: center;
-  padding: 10px 10px;
+  padding: 13px;
   margin-top: 30px;
   margin-bottom: 10px;
   background: var(--dark-blue);
+  background: var(--light-orange);
   border-radius: 50%;
   align-self: center;
   color: var(--dark-orange);
+  color: var(--dark-blue);
+  align-self: center !important;
 }
 
 
@@ -1416,8 +1419,6 @@ section.aboutuspage {
 h1.home_title {
   font-size: 3rem !important;
 }
-
-
 
 /* Large Laptops and Desktops */
 @media (max-width: 1250px) {
